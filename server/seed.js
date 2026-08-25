@@ -1,4 +1,5 @@
-require("dotenv").config();
+//require("dotenv").config();
+require("dotenv").config({ path: __dirname + "/.env" });
 const mongoose = require("mongoose");
 const itemsCollection = require("./itemsCollection");
 
@@ -8,7 +9,7 @@ const seedDatabase = async () => {
 
         console.log("MongoDB connected");
 
-        const collection = mongoose.connection.db.collection("Items");
+        const collection = mongoose.connection.db.collection("data");
 
         await collection.deleteMany({});
         await collection.insertMany(itemsCollection);
