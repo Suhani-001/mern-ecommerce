@@ -3,12 +3,12 @@
 const itemsCollection = [
     {
         "_id": "630b7c690dd4ac34455cb262",
-        "name": "Versace",
+        "name": "nike",
         "category": "men",
         "color": "black",
         "type": "shoes",
-        "description": "Odissea chunky leather trainers",
-        "price": 699,
+        "description": "school shoes for boys",
+        "price": 25,
         "size": [
             "36",
             "38",
