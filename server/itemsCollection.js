@@ -67,11 +67,11 @@ const itemsCollection = [
     },
     {
         "_id": "630bdc280dd6605053c3f066",
-        "name": "Zegna",
+        "name": "H&M",
         "category": "men",
-        "color": "black",
+        "color": "Navy Blue",
         "type": "suit",
-        "description": "Lightweight blazer",
+        "description": "Winter blazer",
         "price": 1181,
         "size": [
             "XXL"
