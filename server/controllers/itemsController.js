@@ -36,9 +36,19 @@ const addItem = async (req, res) => {
 }
 
 /* PUT Request handler */
-const updateItem = (req, res) => {
-    res.json({message: "update Item"})
-}
+const updateItem = async (req, res) => {
+    try {
+        const item = await Item.findByIdAndUpdate(
+            req.params.id,
+            req.body,
+            { new: true }
+        );
+
+        res.json(item);
+    } catch (error) {
+        res.status(500).json({ message: error.message });
+    }
+};
 
 /* DELETE Request handler */
 const deleteItem = (req, res) => {
