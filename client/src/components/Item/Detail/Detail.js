@@ -85,10 +85,10 @@ const Detail = (props) => {
                 <div className="collect__item__actions">
                     <div className="add__cart__add__wish">
                         <div className="add__cart">
-                            <Button variant="outlined" size="large" sx={[{'&:hover': { backgroundColor: '#FFE26E', borderColor: '#FFE26E', borderWidth: '3px', color: 'black'}, minWidth: 200, borderColor: 'black', backgroundColor: "black" , color: "#FFE26E", borderWidth: '3px'}]} onClick={handelAddToCart}>ADD TO BAG</Button>
+                            <Button variant="outlined" size="large" sx={[{'&:hover': { backgroundColor: '#A8ABA9', borderColor: '#A8ABA9', borderWidth: '3px', color: 'black'}, minWidth: 200, borderColor: 'black', backgroundColor: "black" , color: "#A8ABA9", borderWidth: '3px'}]} onClick={handelAddToCart}>ADD TO BAG</Button>
                         </div>
                         <div className="add__wish">
-                            <IconButton variant="outlined" size="large" sx={[{'&:hover': { backgroundColor: '#FFE26E', borderColor: '#FFE26E', borderWidth: '3px', color: 'black'}, borderColor: 'black', backgroundColor: "black" , color: "#FFE26E", borderWidth: '3px'}]} onClick={handelAddToWish}>
+                            <IconButton variant="outlined" size="large" sx={[{'&:hover': { backgroundColor: '#A8ABA9', borderColor: '#A8ABA9', borderWidth: '3px', color: 'black'}, borderColor: 'black', backgroundColor: "black" , color: "#A8ABA9", borderWidth: '3px'}]} onClick={handelAddToWish}>
                                 <FavoriteBorderIcon sx={{width: '22px', height: '22px'}}/>
                             </IconButton>
                         </div>

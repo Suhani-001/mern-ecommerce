@@ -22,7 +22,7 @@ const ProductView = (props) => {
     
     return (
             <div className="d-flex min-vh-100 w-100 justify-content-center align-items-center m-auto">
-                {loading && <ReactLoading type="balls" color='#FFE26E' height={100} width={100} className='m-auto'/>}
+                {loading && <ReactLoading type="balls" color='#A8ABA9' height={100} width={100} className='m-auto'/>}
                 {item && <Item item={item[0]}/>}
             </div>
      );

@@ -30,7 +30,7 @@ const WishCard = (props) => {
             <div className="wish__item__name">{props.item.name}</div>
             <div className="wish__item__price">${props.item.price}</div>
             <div className="add__to__cart">
-                <Button variant='outlined' onClick={handelAddToCart} sx={[{'&:hover': { backgroundColor: '#FFE26E', borderColor: '#FFE26E', color: 'black'}, borderColor: 'black', backgroundColor: "black" , color: "#FFE26E"}]}>Add to cart</Button>
+                <Button variant='outlined' onClick={handelAddToCart} sx={[{'&:hover': { backgroundColor: '#A8ABA9', borderColor: '#A8ABA9', color: 'black'}, borderColor: 'black', backgroundColor: "black" , color: "#A8ABA9"}]}>Add to cart</Button>
             </div>
         </div>
      );

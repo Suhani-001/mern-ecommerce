@@ -42,10 +42,10 @@ const ItemCard = (props) => {
                         <span>${props.item.price}</span>
                     </div>
                     <div className="product__card__action">
-                        <IconButton onClick={handleAddToWishList} sx={ {borderRadius: '20px', width: '40px', height: '40px', /* borderWidth: '3px', borderStyle: 'solid', borderColor: '#FFE26E' */ }  }>
+                        <IconButton onClick={handleAddToWishList} sx={ {borderRadius: '20px', width: '40px', height: '40px', /* borderWidth: '3px', borderStyle: 'solid', borderColor: '#A8ABA9' */ }  }>
                             <FavoriteBorderIcon sx={{width: '22px', height: '22px', color: 'black'}}/>
                         </IconButton>
-                        <IconButton onClick={handleAddToCart} sx={ {borderRadius: '20px', width: '40px', height: '40px' /*  borderWidth: '3px', borderStyle: 'solid', borderColor: '#FFE26E' */}}>
+                        <IconButton onClick={handleAddToCart} sx={ {borderRadius: '20px', width: '40px', height: '40px' /*  borderWidth: '3px', borderStyle: 'solid', borderColor: '#A8ABA9' */}}>
                             <AddShoppingCartIcon sx={{width: '22px', height: '22px', color: 'black'}}/>
                         </IconButton >
                     </div>
