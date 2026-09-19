@@ -27,7 +27,7 @@ const ItemCard = (props) => {
                     onMouseEnter={() => setIsHovered(true)}
                     onMouseLeave={() => setIsHovered(false)}
                 > 
-                    {isHovered? <img src={`https://vastra-backend.vercel.app/public/${props.item.category}/${props.item.image[1].filename}`} alt="item" className="product__img"/>: <img src= {`https://vastra-backend.vercel.app/public/${props.item.category}/${props.item.image[0].filename}`} alt="item" className="product__img"/> }
+                    {isHovered? <img src={`http://localhost:5000/${props.item.category}/${props.item.image[0].filename}`} alt="item" className="product__img"/>: <img src= {`http://localhost:5000/${props.item.category}/${props.item.image[0].filename}`} alt="item" className="product__img"/> }
                 </div>
                 <div className="product__card__detail">
                     <div className="product__name">
