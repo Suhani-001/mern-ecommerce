@@ -41,7 +41,7 @@ const Footer = () => {
                                 <LocalPhoneIcon /> <span>+123 4567 890</span>
                             </li>
                             <li className="footer__contact">
-                                <EmailIcon /> <span>shop@shema.com</span>
+                                <EmailIcon /> <span>shop@vastra.com</span>
                             </li>
                             <li className="footer__contact">
                                 <LocationOnIcon /> <span>Addis Ababa, Ethiopia</span>
@@ -73,7 +73,7 @@ const Footer = () => {
                 </div>
                 <div className="fotter__copyright__container">
                     <ul className='nav'>
-                        <li className="footer__copyright">©2022 Shema Ltd. |</li>
+                        <li className="footer__copyright">©2022 vastra Ltd. |</li>
                         <li className="footer__terms__condition"> | Terms & Condition |</li>
                         <li className="footer__privacy__policy">| Privacy Policy</li>
                     </ul>

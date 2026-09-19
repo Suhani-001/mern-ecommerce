@@ -6,14 +6,14 @@ import './Shop.css';
 import ReactLoading from 'react-loading';
 
 const Shop = () => {
-    TabTitle("Shop - SHEMA")
+    TabTitle("Shop - vastra")
     const [ menItems, setMenItems ] = useState()
     const [ womenItems, setWomenItems ] = useState()
     const [ kidsItems, setKidsItems ] = useState()
     const [ loading , setLoading ] = useState(true) 
 
     useEffect(() => {
-        axios.get("https://shema-backend.vercel.app/api/items")
+        axios.get("https://vastra-backend.vercel.app/api/items")
             .then(res => {
                 setMenItems(res.data.filter((item) => item.category === "men"))
                 setKidsItems(res.data.filter((item) => item.category === "kids" ))

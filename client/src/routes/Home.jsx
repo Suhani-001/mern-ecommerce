@@ -8,7 +8,7 @@ import { TabTitle } from "../utils/General";
 
 const Home = () => {
     const [ featuredItems, setFeaturedItems ] = useState()
-    TabTitle("Home - Shema");
+    TabTitle("Home - vastra");
 
     useEffect(() => {
         axios.get("http://localhost:5000/api/items")
