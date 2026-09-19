@@ -102,10 +102,10 @@
     height: 40px;
     border-radius: 25px;
     font-size: 0.8rem;
-    background-color: #000000;
+    background-color: var(--charcoal)000;
     font-weight:bold;
     border-style: none;
-    color: #ffffff;
+    color: var(--white);
 }
 
 .remove__item__icon {

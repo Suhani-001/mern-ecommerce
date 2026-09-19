@@ -1,21 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+/* VASTRA Colour Palette */
+:root {
+    --charcoal: #1C1C1C;
+    --ivory: #F7F5F0;
+    --grey: var(--grey);
+    --taupe: var(--taupe);
+    --white: var(--white);
+}
+
+/* Global Styling */
 * {
     font-family: 'Manrope', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Manrope', sans-serif;
+    background-color: var(--ivory);
+    color: var(--charcoal);
 }
 
 a {
     text-decoration: none;
-    color: #000;
+    color: var(--charcoal);
 }
-
 
 a:hover {
     text-decoration: none;
 }
-body {
-    font-family: 'Manrope', sans-serif;
-}
+
 h1,
 h2,
 h3,
@@ -23,5 +38,5 @@ h4,
 h5,
 h6 {
     font-family: 'Manrope', sans-serif;
+    color: var(--charcoal);
 }
-

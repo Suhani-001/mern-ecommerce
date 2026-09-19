@@ -16,7 +16,7 @@
 
 .landing__header a {
     text-decoration: none;
-    color: #000;
+    color: var(--charcoal);
 }
 
 .landing__header__container {

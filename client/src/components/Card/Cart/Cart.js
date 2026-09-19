@@ -19,7 +19,7 @@ const style = {
   width: '45%',
   height: '400px',
   bgcolor: 'background.paper',
-  border: '5px solid #A8ABA9',
+  border: '5px solid var(--grey)',
   borderRadius: '15px',
   boxShadow: 24,
   p: 4,

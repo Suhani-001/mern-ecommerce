@@ -142,8 +142,8 @@
     height:45px;
     border-radius: 25px;
     font-size: 0.8rem;
-    background-color: #A8ABA9;
-    border-color: #A8ABA9;
+    background-color: var(--grey);
+    border-color: var(--grey);
     border-style: dashed;
     font-weight:bold;
 }
@@ -173,13 +173,13 @@
     height:45px;
     border-radius: 25px;
     font-size: 0.8rem;
-    background-color: #000000;
+    background-color: var(--charcoal)000;
     font-weight:bold;
     border-style: none;
-    color: #ffffff;
+    color: var(--white);
 }
 
 .buy__button:hover {
-    background-color: #000000d1;
+    background-color: var(--charcoal)000d1;
 }
 

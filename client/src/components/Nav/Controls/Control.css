@@ -27,13 +27,13 @@
     justify-content: center;
     align-items: center;
     border-style: solid;
-    border-color: #A8ABA9;
+    border-color: var(--grey);
     border-radius: 10px;
     cursor: pointer;
     margin: 5px;
 }
 
 .control:hover {
-    background-color: #A8ABA9;
+    background-color: var(--grey);
     color: black;
 }

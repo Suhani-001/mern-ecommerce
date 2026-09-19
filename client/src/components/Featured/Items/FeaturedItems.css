@@ -35,7 +35,7 @@
 .featured__products__header__line {
     width: 150px;
     height: 6px;
-    background-color: #A8ABA9;
+    background-color: var(--grey);
     align-self: flex-start;
     margin-left: 50px;
     border-radius: 25px;

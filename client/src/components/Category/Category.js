@@ -70,7 +70,7 @@ const Category = (props) => {
                     <div className="category__product__card">
                         {props.items.map((data) => <ItemCard item={data} category={props.category}/>)}
                         <div className="show__more__action">
-                            <Button variant='outlined' sx={[ {width: '200px', height: '50px', borderRadius: '20px' , fontWeight: '700', backgroundColor: '#A8ABA9', borderColor: '#A8ABA9', color: 'black' }, {'&:hover': { borderColor: '#A8ABA9', backgroundColor: "none" }}]}>Show more</Button>
+                            <Button variant='outlined' sx={[ {width: '200px', height: '50px', borderRadius: '20px' , fontWeight: '700', backgroundColor: 'var(--grey)', borderColor: 'var(--grey)', color: 'black' }, {'&:hover': { borderColor: 'var(--grey)', backgroundColor: "none" }}]}>Show more</Button>
                         </div>
                     </div>
                 </div>

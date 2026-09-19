@@ -36,7 +36,7 @@
 .related__header__line {
     width: 180px;
     height: 6px;
-    background-color: #A8ABA9;
+    background-color: var(--grey);
     align-self: center;
     border-radius: 25px;
 }

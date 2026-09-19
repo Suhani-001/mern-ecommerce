@@ -24,7 +24,7 @@
 .shop__category__header__line {
     width: 120px;
     height: 6px;
-    background-color: #A8ABA9;
+    background-color: var(--grey);
     align-self: flex-start;
     border-radius: 25px;
 }

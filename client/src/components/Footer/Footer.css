@@ -3,7 +3,7 @@
 .footer__container {
     height: auto;
     width: 100%;
-    background-color: #A8ABA9;
+    background-color: var(--grey);
     display: flex;
     flex-direction: column;
 }
@@ -128,7 +128,7 @@
     width: 100%;
     background-color: black;
     display: flex;
-    color: #A8ABA9;
+    color: var(--grey);
     display: flex;
     justify-content: center;
     align-items: center;
