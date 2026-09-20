@@ -1,12 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@200..800&display=swap');
 
 /* VASTRA Colour Palette */
 :root {
     --charcoal: #1C1C1C;
-    --ivory: #F7F5F0;
-    --grey: var(--grey);
-    --taupe: var(--taupe);
-    --white: var(--white);
+    --maroon: #2D0000;;
+    --white: #FFFFFF;
 }
 
 /* Global Styling */
@@ -17,8 +15,7 @@
 
 body {
     margin: 0;
-    font-family: 'Manrope', sans-serif;
-    background-color: var(--ivory);
+    background-color: var(--white);
     color: var(--charcoal);
 }
 
@@ -31,12 +28,14 @@ a:hover {
     text-decoration: none;
 }
 
+/* Headings */
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-    font-family: 'Manrope', sans-serif;
+    font-family: 'Cormorant Garamond', serif;
     color: var(--charcoal);
+    font-weight: 600;
 }
