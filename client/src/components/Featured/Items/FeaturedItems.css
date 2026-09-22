@@ -12,20 +12,24 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 50px;
+    padding-top: 10px;
 }
 
 .featured__products__header {
     width: 100%;
     display: flex;
-    justify-content: center;
     align-items: center;
     text-align: center;
+    padding-left: 30px;
+    justify-content: space-between;
+    padding: 0 20px;
+    
 }
 
 .featured__items__header__big {
     font-size: 2rem;
     font-weight: 600;
+     
 }
 
 .featured__header__small {
@@ -43,11 +47,26 @@
 
 .featured__products__card__container {
     margin-top: 20px;
-    padding: 30px;
     width: 100%;
     height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+     display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    padding: 20px;
+}
+.all__collections {
+    color: #000;
+    text-decoration: none;
+    font-family: "Manrope", sans-serif;
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+.all__collections span {
+    margin-left: 8px;
+    font-size: 1rem;
 }

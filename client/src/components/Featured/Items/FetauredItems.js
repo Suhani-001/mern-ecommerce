@@ -1,5 +1,6 @@
 import ItemCard from '../../Card/ItemCard/ItemCard';
 import ReactLoading from 'react-loading';
+import { Link } from "react-router-dom";
 
 import './FeaturedItems.css';
 
@@ -11,8 +12,11 @@ const FeaturedItems = (props) => {
                 <div className="featured__products__header">
                     <h3
                      className="featured__items__header__big">
-                        Featured Items
+                        Bestsellers
                     </h3>
+                    <Link to="/shop" className="all__collections">
+    EXPLORE ALL  <span>→</span>
+</Link>
                 </div>
 
                 <div className="featured__products__header__line"></div>

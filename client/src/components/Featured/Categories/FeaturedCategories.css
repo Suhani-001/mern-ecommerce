@@ -14,7 +14,7 @@
 .featured__categories__header {
     width: 100%;
     margin: 0 0 20px;
-    text-align: center;
+    text-align: left;
 }
 
 .featured__header__big {
@@ -42,4 +42,25 @@
     .featured__categories__card__container {
         grid-template-columns: 1fr;
     }
+}
+
+.featured__categories__header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.all__collections {
+    color: #000;
+    text-decoration: none;
+    font-family: "Manrope", sans-serif;
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+.all__collections span {
+    margin-left: 8px;
+    font-size: 1rem;
 }
