@@ -16,10 +16,10 @@
 }
 
 .featured__products__header {
-    width: 92%;
+    width: 100%;
     display: flex;
-    align-items: flex-start;
-    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     text-align: center;
 }
 

@@ -1,50 +1,53 @@
 .landing__container {
     width: 100%;
-    min-height: 250px;
+    min-height: 500px;
     height: auto;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap-reverse;
-    background-image: url("D:\Internship_project\mern-ecommerce\1.png");
+    background-image: url("D:\Internship_project\mern-ecommerce\hero.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
+    padding: 40px 0;
 }
 
 .landing__header a {
     text-decoration: none;
-    color: var(--charcoal);
+    color: var(--white);
+    padding: 0;
 }
 
 .landing__header__container {
-    width: 40%;
-    height: auto;
-    min-width: 300px;
+    width: 50%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 40px;
 }
 
 .landing__header {
-    height: auto;
-    width: 90%;
+    width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
     flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: left;
+    margin: 0;
 }
 
 .landing__header__main {
     font-size: 4rem;
-    font-weight: 800;
+    font-weight: 400;
+    color: white
 }
 
 .landing__header__discount {
     font-size: 1.2rem;
+    color: white
 }
 
 .landing__button {
@@ -53,25 +56,10 @@
     transition: 0.3s;
 }
 
-.landing__image__container {
-    width: 50%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.landing__image {
-    width: auto;
-    height: 100%;
-    max-width: 100%;
-    max-height: 500px;
-    z-index: 10;
-    transform: scale(1.2);
-}
-
 @media screen and (max-width: 850px) {
-    .landing__image__container {
-        display: none;
+    .landing__header__container {
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }

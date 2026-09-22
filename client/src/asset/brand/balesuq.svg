@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1715" height="520" viewBox="0 0 1715 520">
   <g id="Group_131" data-name="Group 131" transform="translate(-238 -30)">
     <g id="Group_130" data-name="Group 130">
-      <g id="Ellipse_56" data-name="Ellipse 56" transform="translate(1121 140)" fill="none" stroke="var(--charcoal)" stroke-width="48">
+      <g id="Ellipse_56" data-name="Ellipse 56" transform="translate(1121 140)" fill="none" stroke="var(--black)" stroke-width="48">
         <ellipse cx="176" cy="169.5" rx="176" ry="169.5" stroke="none"/>
         <ellipse cx="176" cy="169.5" rx="152" ry="145.5" fill="none"/>
       </g>

@@ -14,7 +14,7 @@ const CategoryCard = (props) => {
                     </div>
                     <div className="category__card__action">
                         <Link to={props.data.url}>
-                            <Button variant='outlined' sx={[{'&:hover': { backgroundColor: 'none', borderColor: 'var(--grey)', color: 'var(--grey)'}, borderRadius: '20px' , borderColor: 'var(--grey)', backgroundColor: "var(--grey)" , color: "var(--charcoal)", fontWeight: '700'}]}>SHOP NOW</Button>
+                            <Button variant='outlined' sx={[{'&:hover': { backgroundColor: 'none', borderColor: 'var(--grey)', color: 'var(--grey)'}, borderRadius: '20px' , borderColor: 'var(--grey)', backgroundColor: "var(--grey)" , color: "var(--black)", fontWeight: '700'}]}>SHOP NOW</Button>
                         </Link>
                     </div>
             </div>
