@@ -12,9 +12,10 @@ const Landing = () => {
                 <div className="landing__header">
 
 
-                    <h1 className="landing__header__main">
+                    <h2
+                     className="landing__header__main">
                         YOUR NEXT SIGNATURE LOOK
-                    </h1>
+                    </h2>
                     <h3 className="landing__header__discount">
                         Find your style. Make it yours.
                     </h3>

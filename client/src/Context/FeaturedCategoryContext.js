@@ -1,26 +1,33 @@
 import { createContext } from "react";
 
-import menFashion from '../asset/Products/cloth/men/men-1.jpeg'
-import womenFashion from '../asset/Products/cloth/women/women-1.jpeg'
-import kidsFashion from '../asset/Products/cloth/kids/kids-2.jpeg'
+import ethnic from '../asset/category/ethnic.jpg'
+import casual from '../asset/category/casual.jpg'
+import footwear from '../asset/category/footwear.jpg'
+import jewellery from '../asset/category/jewellery.jpg'
 
 export const FeatureCategoryContext = createContext([
     {
-        name: "Men's Fashion",
-        image: menFashion,
-        url: '/category/men',
+        name: "Ethnic",
+        image: ethnic,
+        url: '/category/ethnic',
         id: 1
     },
     {
-        name: "Women's Fashion",
-        image: womenFashion,
-        url: '/category/women',
+        name: "Casual",
+        image: casual,
+        url: '/category/casual',
         id: 2
     },
     {
-        name: "Kids Fashion",
-        image: kidsFashion,
-        url: '/category/kids',
+        name: "Footwear",
+        image: footwear,
+        url: '/category/footwear',
         id: 3
+    },
+    {
+        name: "Jewellery",
+        image: jewellery,
+        url: '/category/jewellery',
+        id: 4
     }
 ])

@@ -9,7 +9,8 @@ const FeaturedItems = (props) => {
             <div className="featured__products">
 
                 <div className="featured__products__header">
-                    <h3 className="featured__items__header__big">
+                    <h3
+                     className="featured__items__header__big">
                         Featured Items
                     </h3>
                 </div>
