@@ -25,12 +25,16 @@ const WishCard = (props) => {
                 </IconButton>
             </div>
             <div className="wish__item__image">
-                <img src={`https://vastra-ecommerce.herokuapp.com/${props.item.category}/${props.item.image[0].filename}`} alt="item" className="wish__image"/>
+                <img
+    src={`http://localhost:5000/${props.item.category}/${props.item.image[0].filename}`}
+    alt="item"
+    className="wish__image"
+/>
             </div>
             <div className="wish__item__name">{props.item.name}</div>
-            <div className="wish__item__price">${props.item.price}</div>
+            <div className="wish__item__price">₹{props.item.price}</div>
             <div className="add__to__cart">
-                <Button variant='outlined' onClick={handelAddToCart} sx={[{'&:hover': { backgroundColor: 'var(--grey)', borderColor: 'var(--grey)', color: 'black'}, borderColor: 'black', backgroundColor: "black" , color: "var(--grey)"}]}>Add to cart</Button>
+                <Button variant='outlined' onClick={handelAddToCart} sx={[{'&:hover': { backgroundColor: 'white', borderColor: 'black', color: 'black'}, borderColor: 'black', backgroundColor: "black" , color: "white"}]}>Add to cart</Button>
             </div>
         </div>
      );

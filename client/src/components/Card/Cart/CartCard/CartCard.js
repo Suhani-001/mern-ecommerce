@@ -37,7 +37,7 @@ const CartCard = (props) => {
         <div className='cart__item__card'>
             <div className="cart__item__detail">
                 <div className="cart__item__image">
-                    <img src={`https://vastra-ecommerce.herokuapp.com/${props.item.category}/${props.item.image[0].filename}`} alt="item" className="item__image"/>
+                    <img src={`http://localhost:5000//${props.item.category}/${props.item.image[0].filename}`} alt="item" className="item__image"/>
                 </div>
                 <div className="cart__item__name">{props.item.name}</div>
             </div>
@@ -64,7 +64,7 @@ const CartCard = (props) => {
                     </FormControl>
                 </Box>
             </div>
-            <div className="cart__item__price">${props.item.price}</div>
+            <div className="cart__item__price">₹{props.item.price}</div>
             <div className="remove__item__icon">
                 <IconButton>
                     <HighlightOffIcon onClick={handelRemoveItem}/>
