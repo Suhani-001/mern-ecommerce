@@ -57,6 +57,7 @@
     grid-template-columns: repeat(4, 1fr);
     gap: 30px;
     padding: 20px;
+    
 }
 .all__collections {
     color: #000;
@@ -69,4 +70,16 @@
 .all__collections span {
     margin-left: 8px;
     font-size: 1rem;
+}
+
+@media (max-width: 992px) {
+    .featured__products__card__container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .featured__products__card__container {
+        grid-template-columns: 1fr;
+    }
 }

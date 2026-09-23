@@ -611,12 +611,12 @@ const itemsCollection = [
     },
     {
         "_id": "630c0d7ccacae4f0ab3bd5b7",
-        "name": "Amina Muadi",
+        "name": "Dream Paris",
         "category": "women",
         "color": "brown",
         "type": "shoes",
-        "description": "Sita leather sandals",
-        "price": 937,
+        "description": "Dark brown Loafers",
+        "price": 750,
         "size": [
             "XS",
             " S",
@@ -631,11 +631,11 @@ const itemsCollection = [
             " Transparent strap",
             " Platform sole"
         ],
-        "detail": "Sita leather sandals",
+        "detail": "Dark brown Loafers",
         "image": [
             {
                 "fieldname": "images",
-                "originalname": "amina-muaddi-1.jpg",
+                "originalname": "dream-paris-1.jpg",
                 "encoding": "7bit",
                 "mimetype": "image/jpeg",
                 "destination": "./public/women",
@@ -645,7 +645,7 @@ const itemsCollection = [
             },
             {
                 "fieldname": "images",
-                "originalname": "amina-muaddi-2.jpg",
+                "originalname": "dream-paris-2.jpg",
                 "encoding": "7bit",
                 "mimetype": "image/jpeg",
                 "destination": "./public/women",
@@ -655,7 +655,7 @@ const itemsCollection = [
             },
             {
                 "fieldname": "images",
-                "originalname": "amina-muaddi-3.jpg",
+                "originalname": "dream-paris-3.jpg",
                 "encoding": "7bit",
                 "mimetype": "image/jpeg",
                 "destination": "./public/women",
@@ -665,7 +665,7 @@ const itemsCollection = [
             },
             {
                 "fieldname": "images",
-                "originalname": "amina-muaddi-4.jpg",
+                "originalname": "dream-paris-4.jpg",
                 "encoding": "7bit",
                 "mimetype": "image/jpeg",
                 "destination": "./public/women",

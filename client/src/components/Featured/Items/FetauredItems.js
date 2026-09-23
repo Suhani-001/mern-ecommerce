@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import './FeaturedItems.css';
 
 const FeaturedItems = (props) => {
+    const featuredIndexes = [0, 4, 10, 20, 16, 5, 13, 23];
     return (
         <div className="featured__products__container">
             <div className="featured__products">
@@ -36,14 +37,17 @@ const FeaturedItems = (props) => {
                     {props.items && (
                         <div className="featured__products__card__container">
 
-                            <ItemCard item={props.items[0]} category="featured" />
-                            <ItemCard item={props.items[4]} category="featured" />
-                            <ItemCard item={props.items[10]} category="featured" />
-                            <ItemCard item={props.items[20]} category="featured" />
-                            <ItemCard item={props.items[16]} category="featured" />
-                            <ItemCard item={props.items[5]} category="featured" />
-                            <ItemCard item={props.items[13]} category="featured" />
-                            <ItemCard item={props.items[23]} category="featured" />
+                            {featuredIndexes.map((index) => {
+    const item = props.items[index];
+
+    return item ? (
+        <ItemCard
+            key={item._id}
+            item={item}
+            category="featured"
+        />
+    ) : null;
+})}
 
                         </div>
                     )}
