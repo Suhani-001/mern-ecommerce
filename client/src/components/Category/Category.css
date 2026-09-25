@@ -68,9 +68,12 @@
 .category__product__card {
     height: auto;
     width: 95%;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 25px;
+    align-items: start;
 }
 
 .show__more__action {
@@ -91,4 +94,9 @@
     border-color: var(--grey);
     border-style: dashed;
     font-weight:bold;
+}
+.category__product__card .product__card__card {
+    width: 100%;
+    min-width: 0;
+    margin: 0;
 }

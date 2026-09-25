@@ -4,6 +4,7 @@ import axios from "axios";
 import ShopCategory from './Container/ShopCategory';
 import './Shop.css';
 import ReactLoading from 'react-loading';
+import FeaturedCategories from "../Featured/Categories/FeaturedCategories";
 
 const Shop = () => {
     TabTitle("Shop - vastra")
@@ -13,7 +14,7 @@ const Shop = () => {
     const [ loading , setLoading ] = useState(true) 
 
     useEffect(() => {
-        axios.get("https://vastra-backend.vercel.app/api/items")
+        axios.get("http://localhost:5000/api/items")
             .then(res => {
                 setMenItems(res.data.filter((item) => item.category === "men"))
                 setKidsItems(res.data.filter((item) => item.category === "kids" ))
@@ -25,14 +26,53 @@ const Shop = () => {
     
     }, [])
 
-    return ( 
-        <div className="shop__contianer">
-            {loading && <ReactLoading type="balls" color='var(--grey)'  height={100} width={100} className='container h-100 w-10 justify-self-center align-self-center m-auto'/>}
-            {menItems && <ShopCategory name="Men" key="men" items={menItems}/>}
-            {womenItems && <ShopCategory name="Women" key="women" items={womenItems}/>}
-            {kidsItems && <ShopCategory name="Kids" key="kids" items={kidsItems}/>}
-        </div>
-     );
+    return (
+    <div className="shop__contianer">
+
+        {/* Home page wali exact categories */}
+        <FeaturedCategories
+    title="Explore Categories"
+    showViewAll={false}
+    showAll={true}
+/>
+
+        {/* Existing Shop Products */}
+        {loading && (
+            <ReactLoading
+                type="balls"
+                color="var(--grey)"
+                height={100}
+                width={100}
+                className="m-auto"
+            />
+        )}
+
+        {menItems && (
+            <ShopCategory
+                name="Men"
+                key="men"
+                items={menItems}
+            />
+        )}
+
+        {womenItems && (
+            <ShopCategory
+                name="Women"
+                key="women"
+                items={womenItems}
+            />
+        )}
+
+        {kidsItems && (
+            <ShopCategory
+                name="Kids"
+                key="kids"
+                items={kidsItems}
+            />
+        )}
+
+    </div>
+);
 }
  
 export default Shop;
