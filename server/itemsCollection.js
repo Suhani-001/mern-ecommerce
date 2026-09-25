@@ -26,8 +26,8 @@ const itemsCollection = [
                 "encoding": "7bit",
                 "mimetype": "image/jpeg",
                 "destination": "./public/men",
-                "filename": "images-1661697129697.jpg",
-                "path": "public\\men\\images-1661697129697.jpg",
+                "filename": "nikeshoes.jpg",
+                "path": "public\\men\\nikeshoes.jpg",
                 "size": 48662
             },
             {

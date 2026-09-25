@@ -1,39 +1,73 @@
 a {
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    color: #000;
 }
 
-a:hover {
-    color: black;
+.nav__bottom__container {
+    height: 55px;
+    width: 100%;
+    background-color: #fff;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: static;
+
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
 .nav__bottom__container a {
     text-decoration: none;
-    color: rgb(3, 3, 3);
-    width: 80px;
+    color: #333;
+    width: 85px;
+    height: 55px;
+
     display: flex;
     justify-content: center;
     align-items: center;
-}
 
-.nav__bottom__container a:hover {
-    color: rgb(113, 113, 113);
-}
+    font-size: 18px;
+    font-weight: 600;
 
-.nav__bottom__container {
-    height: 50px;
-    background-color: rgb(255, 255, 255);
-    display: flex;
-    justify-content: space-between;
     position: relative;
-    z-index: 100;
+
+    transition: color 0.25s ease, transform 0.25s ease;
+}
+
+/* Hover */
+.nav__bottom__container a:hover {
+    color: #000;
+    transform: translateY(-1px);
+}
+
+/* Current page */
+.nav__bottom__container a.active {
+    color: #000 !important;
+    font-weight: 800 !important;
+}
+
+/* Current page indicator */
+.nav__bottom__container a.active::after {
+    content: "";
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 32px;
+    height: 3px;
+
+    background-color: #000;
+    border-radius: 5px;
 }
 
 .bottom__container {
     margin: auto;
     display: flex;
     align-items: center;
-    flex-direction: row
+    flex-direction: row;
 }
 
 .container .nav-link {
@@ -47,14 +81,12 @@ a:hover {
 }
 
 @media screen and (max-width: 780px) {
-    .nav__bottom__container{
+    .nav__bottom__container {
         display: none;
     }
-}
 
-@media screen and (max-width: 780px) {
-    .control__small{
-       display: flex;
-       margin: auto 10px;
+    .control__small {
+        display: flex;
+        margin: auto 10px;
     }
 }

@@ -16,7 +16,7 @@ const CategoryCard = (props) => {
 
             <div className="category__card__detail">
                 <div className="category__card__action">
-                    <Link to={props.data.url}>
+                    <Link to="/shop">
                         <Button
                             variant="outlined"
                             sx={{
@@ -25,7 +25,7 @@ const CategoryCard = (props) => {
                                 padding: "4px 10px",
                                 borderRadius: "20px",
                                 borderColor: "#000000",
-                                backgroundColor: "transparent",
+                                backgroundColor: "#E5E5E5",
                                 color: "#000000",
                                 fontWeight: "700",
                                 fontSize: "0.75rem",
