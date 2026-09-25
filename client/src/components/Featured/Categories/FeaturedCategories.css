@@ -53,11 +53,16 @@
 }
 
 .all__collections {
+    display: inline-block;
     color: #000;
     text-decoration: none;
-    font-family: "Manrope", sans-serif;
-    font-size: 0.75rem;
-    font-weight: 500;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.all__collections:hover {
+    color: #000;
+    text-decoration: none;
 }
 
 .all__collections span {

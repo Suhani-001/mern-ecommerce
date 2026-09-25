@@ -73,11 +73,14 @@ select {
     text-decoration: none;
     font-family: "Manrope", sans-serif;
     font-weight: 600;
+    transition: 0.3s ease;
 }
 
 .discount__button:hover {
     background-color: #fff;
     color: #000;
+    transition: 0.3s ease;
+    text-decoration:none;
 }
 
 .new__banner {
@@ -118,13 +121,16 @@ select {
     padding: 10px 25px;
     border: 1px solid #000;
     border-radius: 20px;
+    background-color: #e5e5e5;
     color: #000;
     text-decoration: none;
     font-family: "Manrope", sans-serif;
     font-weight: 600;
+    transition: 0.3s ease;
 }
 
 .new__banner__button:hover {
     background-color: #000;
     color: #fff;
+    text-decoration: none;
 }

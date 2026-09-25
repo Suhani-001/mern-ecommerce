@@ -14,7 +14,13 @@ const ShopCategory = (props) => {
                 </div>
                 <div className="shop__category__card__container">
                     <div className="shop__category__product__card">
-                        {props.items.map((data) => <ItemCard item={data} category={props.category}/>)}
+                        {props.items.map((data) => (
+                            <ItemCard
+                                key={data._id}
+                                item={data}
+                                category={props.category}
+                            />
+))}
                     </div>
             </div>
         </div>

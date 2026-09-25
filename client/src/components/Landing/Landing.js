@@ -1,3 +1,4 @@
+import hero from "./hero.png";
 import './Landing.css';
 
 import { Link } from "react-router-dom";
@@ -5,7 +6,7 @@ import { Button } from "@mui/material";
 
 const Landing = () => {
     return (
-        <div className="landing__container">
+        <div className="landing__container" style={{ backgroundImage: `url(${hero})` }}>
 
             <div className="landing__header__container">
 

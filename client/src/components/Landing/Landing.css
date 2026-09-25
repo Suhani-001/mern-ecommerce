@@ -7,7 +7,7 @@
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap-reverse;
-    background-image: url("D:\Internship_project\mern-ecommerce\hero.png");
+    /* background-image: url("/hero.png"); */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
