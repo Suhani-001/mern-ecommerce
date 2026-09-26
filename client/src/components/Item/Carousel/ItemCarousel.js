@@ -1,30 +1,32 @@
 import Carousel from 'react-bootstrap/Carousel';
-import './ItemCarousel.css'
+import './ItemCarousel.css';
 
 const ProductCarousel = (props) => {
+    const images = props.item?.image || [];
+
     return (
-      <div className="product__carousel__container">
-        <div className="product__carousel">
-          <Carousel variant="dark" interval={4000}>
-            <Carousel.Item>
-            <div className="carousel__image__container">
-                <img className="carousel__image" src={`https://vastra-backend.vercel.app/public/${props.item.category}/${props.item.image[0].filename}`} alt="item"/>
+        <div className="product__carousel__container">
+            <div className="product__carousel">
+                {images.length > 0 ? (
+                    <Carousel variant="dark" interval={4000}>
+                        {images.map((image, index) => (
+                            <Carousel.Item key={image.filename || index}>
+                                <div className="carousel__image__container">
+                                    <img
+                                        className="carousel__image"
+                                        src={`http://localhost:5000/${props.item.category}/${image.filename}`}
+                                        alt={props.item.name}
+                                    />
+                                </div>
+                            </Carousel.Item>
+                        ))}
+                    </Carousel>
+                ) : (
+                    <p>No image available</p>
+                )}
             </div>
-            </Carousel.Item>  
-            <Carousel.Item>
-            <div className="carousel__image__container">
-                <img className="carousel__image" src={`https://vastra-backend.vercel.app/public/${props.item.category}/${props.item.image[1].filename}`} alt="item"/>
-              </div>
-            </Carousel.Item>   
-            {/* <Carousel.Item>
-            <div className="carousel__image__container">
-                <img className="carousel__image" src={`https://vastra-backend.vercel.app/public/${props.item.category}/${props.item.image[2].filename}`} alt="item"/>
-              </div>
-            </Carousel.Item> */}
-          </Carousel>
         </div>
-      </div>
-     );
-}
- 
+    );
+};
+
 export default ProductCarousel;

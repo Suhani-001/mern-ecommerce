@@ -474,12 +474,12 @@ const itemsCollection = [
     },
     {
         "_id": "630c0ba6cacae4f0ab3bd5b0",
-        "name": "Valentino",
+        "name": "Zara",
         "category": "women",
-        "color": "black",
+        "color": "blue",
         "type": "jeans",
-        "description": "Straight-leg jeans",
-        "price": 1940,
+        "description": "Wide-leg jeans",
+        "price": 1250,
         "size": [
             "XS",
             " S",
@@ -488,54 +488,45 @@ const itemsCollection = [
             " XL"
         ],
         "highlights": [
-            "Black",
+            "blue",
             " Cotton",
             " Logo patch to the rear",
-            " cropped leg",
-            " Feather-trim detailing"
+            " Wide leg"
+        
         ],
-        "detail": "Crafted in a straight-leg silhouette, these black Valentino jeans are trimmed with wispy feathers at the hem for a tactile completion.",
+        "detail": "Classic wide-leg Zara jeans with a clean, timeless fit designed for effortless everyday styling.",
         "image": [
             {
                 "fieldname": "images",
-                "originalname": "valentino-1.jpg",
+                "originalname": "zara-1.png",
                 "encoding": "7bit",
-                "mimetype": "image/jpeg",
+                "mimetype": "image/png",
                 "destination": "./public/women",
-                "filename": "images-1661733798343.jpg",
-                "path": "public\\women\\images-1661733798343.jpg",
+                "filename": "images-1661733798343.png",
+                "path": "public\\women\\images-1661733798343.png",
                 "size": 100712
             },
             {
                 "fieldname": "images",
-                "originalname": "valentino-2.jpg",
+                "originalname": "zara-2.png",
                 "encoding": "7bit",
-                "mimetype": "image/jpeg",
+                "mimetype": "image/png",
                 "destination": "./public/women",
-                "filename": "images-1661733798345.jpg",
-                "path": "public\\women\\images-1661733798345.jpg",
+                "filename": "images-1661733798345.png",
+                "path": "public\\women\\images-1661733798345.png",
                 "size": 52206
             },
             {
                 "fieldname": "images",
-                "originalname": "valentino-3.jpg",
+                "originalname": "zara-3.png",
                 "encoding": "7bit",
-                "mimetype": "image/jpeg",
+                "mimetype": "image/png",
                 "destination": "./public/women",
-                "filename": "images-1661733798350.jpg",
-                "path": "public\\women\\images-1661733798350.jpg",
+                "filename": "images-1661733798350.png",
+                "path": "public\\women\\images-1661733798350.png",
                 "size": 127182
             },
-            {
-                "fieldname": "images",
-                "originalname": "valentino-4.jpg",
-                "encoding": "7bit",
-                "mimetype": "image/jpeg",
-                "destination": "./public/women",
-                "filename": "images-1661733798355.jpg",
-                "path": "public\\women\\images-1661733798355.jpg",
-                "size": 44712
-            }
+            
         ],
         "createdAt": "2022-08-29T00:43:18.501Z",
         "updatedAt": "2022-08-29T00:43:18.501Z",
@@ -547,7 +538,7 @@ const itemsCollection = [
         "category": "women",
         "color": "#457199",
         "type": "jacket",
-        "description": "Twisted-sleeve jacket",
+        "description": "Blue denim jacket",
         "price": 1610,
         "size": [
             "S",
@@ -562,16 +553,16 @@ const itemsCollection = [
             " Concealed front fastening",
             " Two chest flap pockets"
         ],
-        "detail": "Crafted in a straight-leg silhouette, these black Valentino jeans are trimmed with wispy feathers at the hem for a tactile completion.",
+        "detail": "A timeless blue denim jacket that adds a cool, effortless edge to any outfit.",
         "image": [
             {
                 "fieldname": "images",
-                "originalname": "balenciaga-1.jpg",
+                "originalname": "balenciaga-1.png",
                 "encoding": "7bit",
-                "mimetype": "image/jpeg",
+                "mimetype": "image/png",
                 "destination": "./public/women",
-                "filename": "images-1661734130933.jpg",
-                "path": "public\\women\\images-1661734130933.jpg",
+                "filename": "images-1661734130933.png",
+                "path": "public\\women\\images-1661734130933.png",
                 "size": 255238
             },
             {
@@ -594,16 +585,7 @@ const itemsCollection = [
                 "path": "public\\women\\images-1661734131173.jpg",
                 "size": 92536
             },
-            {
-                "fieldname": "images",
-                "originalname": "balenciaga-4.jpg",
-                "encoding": "7bit",
-                "mimetype": "image/jpeg",
-                "destination": "./public/women",
-                "filename": "images-1661734131179.jpg",
-                "path": "public\\women\\images-1661734131179.jpg",
-                "size": 118522
-            }
+            
         ],
         "createdAt": "2022-08-29T00:48:51.208Z",
         "updatedAt": "2022-08-29T00:48:51.208Z",
@@ -628,51 +610,41 @@ const itemsCollection = [
             " Leather",
             " Wraparound style",
             " Self-tie fastening",
-            " Transparent strap",
             " Platform sole"
         ],
         "detail": "Dark brown Loafers",
         "image": [
             {
                 "fieldname": "images",
-                "originalname": "dream-paris-1.jpg",
+                "originalname": "dream-paris-1.png",
                 "encoding": "7bit",
-                "mimetype": "image/jpeg",
+                "mimetype": "image/png",
                 "destination": "./public/women",
-                "filename": "images-1661734268135.jpg",
-                "path": "public\\women\\images-1661734268135.jpg",
+                "filename": "images-1661734268135.png",
+                "path": "public\\women\\images-1661734268135.png",
                 "size": 39380
             },
             {
                 "fieldname": "images",
-                "originalname": "dream-paris-2.jpg",
+                "originalname": "dream-paris-2.png",
                 "encoding": "7bit",
-                "mimetype": "image/jpeg",
+                "mimetype": "image/png",
                 "destination": "./public/women",
-                "filename": "images-1661734268316.jpg",
-                "path": "public\\women\\images-1661734268316.jpg",
+                "filename": "images-1661734268316.png",
+                "path": "public\\women\\images-1661734268316.png",
                 "size": 32366
             },
             {
                 "fieldname": "images",
-                "originalname": "dream-paris-3.jpg",
+                "originalname": "dream-paris-3.png",
                 "encoding": "7bit",
-                "mimetype": "image/jpeg",
+                "mimetype": "image/png",
                 "destination": "./public/women",
-                "filename": "images-1661734268317.jpg",
-                "path": "public\\women\\images-1661734268317.jpg",
+                "filename": "images-1661734268317.png",
+                "path": "public\\women\\images-1661734268317.png",
                 "size": 58369
             },
-            {
-                "fieldname": "images",
-                "originalname": "dream-paris-4.jpg",
-                "encoding": "7bit",
-                "mimetype": "image/jpeg",
-                "destination": "./public/women",
-                "filename": "images-1661734268447.jpg",
-                "path": "public\\women\\images-1661734268447.jpg",
-                "size": 67466
-            }
+            
         ],
         "createdAt": "2022-08-29T00:51:08.496Z",
         "updatedAt": "2022-08-29T00:51:08.496Z",
@@ -680,12 +652,12 @@ const itemsCollection = [
     },
     {
         "_id": "630c0e0dcacae4f0ab3bd5b9",
-        "name": "Palm Angels",
+        "name": "Dorris",
         "category": "women",
-        "color": "brown",
+        "color": "yellow",
         "type": "dress",
-        "description": "Mini t-shirt dress",
-        "price": 383,
+        "description": "Striped Button-Down Midi Dress",
+        "price": 649,
         "size": [
             "XS",
             " S",
@@ -695,53 +667,44 @@ const itemsCollection = [
         "highlights": [
             "Snd brown",
             " Stretch model",
-            " Embroidered logo at the chest",
-            " Crew neck",
-            " Drop shoulder",
-            " Long sleeves"
+            " Striped Button-Down",
+            " collar neck",
+           
+            " puff sleeves"
         ],
-        "detail": "Palm Angels continues to provide L.A inspired streetwear in this AW22 collection. Made from stretch-modal, this long-sleeved T-shirt dress is subtly elevated by an embroidered logo at the chest. Dropped shoulders and a batwing style add to the laid-back aesthetic.",
+        "detail": "A chic striped button-down midi dress that blends effortless elegance with everyday comfort.",
         "image": [
             {
                 "fieldname": "images",
-                "originalname": "palm-angels-1.jpg",
+                "originalname": "Dorris-1.png",
                 "encoding": "7bit",
-                "mimetype": "image/jpeg",
+                "mimetype": "image/png",
                 "destination": "./public/women",
-                "filename": "images-1661734413305.jpg",
-                "path": "public\\women\\images-1661734413305.jpg",
+                "filename": "images-1661734413305.png",
+                "path": "public\\women\\images-1661734413305.png",
                 "size": 110962
             },
             {
                 "fieldname": "images",
-                "originalname": "palm-angels-2.jpg",
+                "originalname": "Dorris-2.png",
                 "encoding": "7bit",
-                "mimetype": "image/jpeg",
+                "mimetype": "image/png",
                 "destination": "./public/women",
-                "filename": "images-1661734413494.jpg",
-                "path": "public\\women\\images-1661734413494.jpg",
+                "filename": "images-1661734413494.png",
+                "path": "public\\women\\images-1661734413494.png",
                 "size": 39972
             },
             {
                 "fieldname": "images",
-                "originalname": "palm-angels-3.jpg",
+                "originalname": "Dorris-3.png",
                 "encoding": "7bit",
-                "mimetype": "image/jpeg",
+                "mimetype": "image/png",
                 "destination": "./public/women",
-                "filename": "images-1661734413498.jpg",
-                "path": "public\\women\\images-1661734413498.jpg",
+                "filename": "images-1661734413498.png",
+                "path": "public\\women\\images-1661734413498.png",
                 "size": 39006
             },
-            {
-                "fieldname": "images",
-                "originalname": "palm-angels-4.jpg",
-                "encoding": "7bit",
-                "mimetype": "image/jpeg",
-                "destination": "./public/women",
-                "filename": "images-1661734413505.jpg",
-                "path": "public\\women\\images-1661734413505.jpg",
-                "size": 128315
-            }
+            
         ],
         "createdAt": "2022-08-29T00:53:33.562Z",
         "updatedAt": "2022-08-29T00:53:33.562Z",

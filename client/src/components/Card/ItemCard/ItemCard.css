@@ -26,6 +26,9 @@
     align-items: center;
     transition: 1s;
     background-color: ivory;
+    width: 100%;
+    overflow: hidden;
+    
 }
 
 .product__image > img {
@@ -35,6 +38,10 @@
     margin: 0px auto;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+    width: 100%;
+    object-fit: contain;
+    display: block;
+    
 }
 
 .product__card__detail {
