@@ -81,6 +81,7 @@ select {
     color: #000;
     transition: 0.3s ease;
     text-decoration:none;
+    
 }
 
 .new__banner {
@@ -121,8 +122,8 @@ select {
     padding: 10px 25px;
     border: 1px solid #000;
     border-radius: 20px;
-    background-color: #e5e5e5;
-    color: #000;
+    color: #fff;
+    background-color: #000;
     text-decoration: none;
     font-family: "Manrope", sans-serif;
     font-weight: 600;
@@ -130,7 +131,77 @@ select {
 }
 
 .new__banner__button:hover {
-    background-color: #000;
-    color: #fff;
+    background-color:#e5e5e5;
+    color: #000;
+    border-color: #000;
     text-decoration: none;
 }
+.back__to__top {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+
+  width: 45px;
+  height: 45px;
+
+  padding: 0;
+  margin: 0;
+
+  border: none;
+  border-radius: 50%;
+
+  background-color: #e5e5e5;
+  color: #000;
+
+  font-size: 24px;
+  font-weight: bold;
+
+  cursor: pointer;
+  z-index: 9999;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-sizing: border-box;
+  transition: 0.3s ease;
+}
+
+.back__to__top:hover {
+  background-color: #e5e5e5;
+  color: #000;
+  border: none;
+}
+
+/* .back__to__top {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+
+  width: 45px;
+  height: 45px;
+
+  border-color: none;
+  border-radius: 50%;
+
+  background-color: #000;
+  color: #fff;
+
+  font-size: 24px;
+  font-weight: bold;
+
+  cursor: pointer;
+  z-index: 9999;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: 0.3s ease;
+}
+
+/* .back__to__top:hover {
+  background-color: #e5e5e5;
+  color: #000;
+  border: 1px solid #000;
+} */ 

@@ -1,117 +1,143 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
-
 import './RegisterCard.css';
 
 const RegisterCard = () => {
-    const [name, setName] = useState("");
+
+    const [firstName, setFirstName] = useState("");
+    const [lastName, setLastName] = useState("");
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
 
-    const handleRegister = async () => {
+    const navigate = useNavigate();
+
+    const handleRegister = async (e) => {
+
+        e.preventDefault();
+
+        if (!firstName.trim() || !lastName.trim() || !email.trim() || !password.trim()) {
+            alert("Please fill all the fields.");
+            return;
+        }
+
         try {
+
+            const fullName = `${firstName.trim()} ${lastName.trim()}`;
+
             const res = await axios.post(
                 "http://localhost:5000/api/user/register",
                 {
-                    name,
-                    email,
+                    name: fullName,
+                    email: email.trim(),
                     password
                 }
             );
 
             alert("Account created successfully!");
-            console.log(res.data);
+
+            console.log("REGISTER RESPONSE:", res.data);
+
+            // Go to login page
+            navigate("/account/login");
 
         } catch (error) {
-    console.log("REGISTER ERROR:", error);
-    console.log("RESPONSE:", error.response);
-    alert(error.message);
-}
+
+            console.log("REGISTER ERROR:", error);
+            console.log("RESPONSE:", error.response);
+
+            alert(
+                error.response?.data?.message ||
+                "Registration failed. Please try again."
+            );
+        }
     };
 
     return (
-        <div className="register__card__container">
-            <div className="register__card">
+        <div className="register__card">
 
-                <div className="register__header">
-                    <h1>Create Account</h1>
-                </div>
+            <div className="register__header">
+                <span className="register__small__text">
+                    WELCOME TO VASTRA
+                </span>
 
-                <div className="register__inputs">
+                <h1>Create Account</h1>
 
-                    <div className="fname__input__container reg__input__container">
-                        <label className="fname__label input__label">
-                            First name
-                        </label>
-
-                        <input
-                            type="text"
-                            className="fname__input register__input"
-                            value={name}
-                            onChange={(e) => setName(e.target.value)}
-                        />
-                    </div>
-
-                    <div className="lname__input__container reg__input__container">
-                        <label className="lname__label input__label">
-                            Last name
-                        </label>
-
-                        <input
-                            type="text"
-                            className="lname__input register__input"
-                        />
-                    </div>
-
-                    <div className="email__input__container reg__input__container">
-                        <label className="email__label input__label">
-                            Email
-                        </label>
-
-                        <input
-                            type="email"
-                            className="email__input register__input"
-                            placeholder="example@gmail.com"
-                            value={email}
-                            onChange={(e) => setEmail(e.target.value)}
-                        />
-                    </div>
-
-                    <div className="password__input__container reg__input__container">
-                        <label className="password__label input__label">
-                            Password
-                        </label>
-
-                        <input
-                            type="password"
-                            className="password__input register__input"
-                            value={password}
-                            onChange={(e) => setPassword(e.target.value)}
-                        />
-                    </div>
-
-                    <div className="register__button__container">
-                        <button
-                            className="register__button"
-                            onClick={handleRegister}
-                        >
-                            Create Account
-                        </button>
-                    </div>
-
-                </div>
-
-                <div className="register__other__actions">
-                    <div className="register__login__account">
-                        Already have account?{" "}
-                        <Link to="/account/login">
-                            Login
-                        </Link>
-                    </div>
-                </div>
-
+                <p>
+                    Create your account to continue shopping with us.
+                </p>
             </div>
+
+            <form
+                className="register__form"
+                onSubmit={handleRegister}
+            >
+
+                <div className="register__name__row">
+
+                    <div className="register__input__group">
+                        <label>First name</label>
+
+                        <input
+                            type="text"
+                            placeholder="Suhani"
+                            value={firstName}
+                            onChange={(e) => setFirstName(e.target.value)}
+                        />
+                    </div>
+
+                    <div className="register__input__group">
+                        <label>Last name</label>
+
+                        <input
+                            type="text"
+                            placeholder="Jain"
+                            value={lastName}
+                            onChange={(e) => setLastName(e.target.value)}
+                        />
+                    </div>
+
+                </div>
+
+                <div className="register__input__group">
+                    <label>Email</label>
+
+                    <input
+                        type="email"
+                        placeholder="example@gmail.com"
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
+                    />
+                </div>
+
+                <div className="register__input__group">
+                    <label>Password</label>
+
+                    <input
+                        type="password"
+                        placeholder="Enter your password"
+                        value={password}
+                        onChange={(e) => setPassword(e.target.value)}
+                    />
+                </div>
+
+                <button
+                    type="submit"
+                    className="register__button"
+                >
+                    CREATE ACCOUNT
+                </button>
+
+            </form>
+
+            <div className="register__login">
+                <span>Already have an account?</span>
+
+                <Link to="/account/login">
+                    Login
+                </Link>
+            </div>
+
         </div>
     );
 };
