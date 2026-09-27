@@ -3,63 +3,54 @@
 const itemsCollection = [
     {
         "_id": "630b7c690dd4ac34455cb262",
-        "name": "NIKE",
+        "name": "Adidas",
         "category": "men",
         "color": "black",
         "type": "shoes",
-        "description": "school shoes for boys",
-        "price": 25,
+        "description": "Sports shoes",
+        "price": 1249,
         "size": [
             "36",
             "38",
             "40"
         ],
         "highlights": [
-            "dark-green",
-            "claf-leather",
+            "black",
+            
             "Medusa-head-motif"
         ],
         "image": [
             {
                 "fieldname": "images",
-                "originalname": "versace-1.jpg",
+                "originalname": "adidas-1.png",
                 "encoding": "7bit",
-                "mimetype": "image/jpeg",
+                "mimetype": "image/png",
                 "destination": "./public/men",
-                "filename": "nikeshoes.jpg",
-                "path": "public\\men\\nikeshoes.jpg",
+                "filename": "images-1661697129697.png",
+                "path": "public\\men\\images-1661697129697.png",
                 "size": 48662
             },
             {
                 "fieldname": "images",
-                "originalname": "versace-2.jpg",
+                "originalname": "adidas-2.png",
                 "encoding": "7bit",
-                "mimetype": "image/jpeg",
+                "mimetype": "image/png",
                 "destination": "./public/men",
-                "filename": "images-1661697129774.jpg",
-                "path": "public\\men\\images-1661697129774.jpg",
+                "filename": "images-1661697129774.png",
+                "path": "public\\men\\images-1661697129774.png",
                 "size": 36702
             },
             {
                 "fieldname": "images",
-                "originalname": "versace-3.jpg",
+                "originalname": "adidas-3.png",
                 "encoding": "7bit",
-                "mimetype": "image/jpeg",
+                "mimetype": "image/png",
                 "destination": "./public/men",
-                "filename": "images-1661697129795.jpg",
-                "path": "public\\men\\images-1661697129795.jpg",
+                "filename": "images-1661697129795.png",
+                "path": "public\\men\\images-1661697129795.png",
                 "size": 34354
             },
-            {
-                "fieldname": "images",
-                "originalname": "versace-4.jpg",
-                "encoding": "7bit",
-                "mimetype": "image/jpeg",
-                "destination": "./public/men",
-                "filename": "images-1661697129840.jpg",
-                "path": "public\\men\\images-1661697129840.jpg",
-                "size": 48932
-            }
+            
         ],
         "createdAt": "2022-08-28T14:32:09.906Z",
         "updatedAt": "2022-08-28T14:32:09.906Z",
@@ -69,15 +60,15 @@ const itemsCollection = [
         "_id": "630bdc280dd6605053c3f066",
         "name": "H&M",
         "category": "men",
-        "color": "Navy Blue",
-        "type": "suit",
-        "description": "Winter blazer",
-        "price": 1181,
+        "color": "Sky Blue",
+        "type": "shirt",
+        "description": "Striped shirt",
+        "price": 559,
         "size": [
             "XXL"
         ],
         "highlights": [
-            "navy",
+            "Sky blue",
             " cotton blend",
             " front button fastening",
             " notched collar",
@@ -87,32 +78,32 @@ const itemsCollection = [
         "image": [
             {
                 "fieldname": "images",
-                "originalname": "zegna-1.jpg",
+                "originalname": "H&M-1.png",
                 "encoding": "7bit",
-                "mimetype": "image/jpeg",
+                "mimetype": "image/png",
                 "destination": "./public/men",
-                "filename": "images-1661721639781.jpg",
-                "path": "public\\men\\images-1661721639781.jpg",
+                "filename": "images-1661721639781.png",
+                "path": "public\\men\\images-1661721639781.png",
                 "size": 26300
             },
             {
                 "fieldname": "images",
-                "originalname": "zegna-2.jpg",
+                "originalname": "H&M-2.png",
                 "encoding": "7bit",
-                "mimetype": "image/jpeg",
+                "mimetype": "image/png",
                 "destination": "./public/men",
-                "filename": "images-1661721639931.jpg",
-                "path": "public\\men\\images-1661721639931.jpg",
+                "filename": "images-1661721639931.png",
+                "path": "public\\men\\images-1661721639931.png",
                 "size": 89496
             },
             {
                 "fieldname": "images",
-                "originalname": "zegna-3.jpg",
+                "originalname": "H&M-3.png",
                 "encoding": "7bit",
-                "mimetype": "image/jpeg",
+                "mimetype": "image/png",
                 "destination": "./public/men",
-                "filename": "images-1661721640024.jpg",
-                "path": "public\\men\\images-1661721640024.jpg",
+                "filename": "images-1661721640024.png",
+                "path": "public\\men\\images-1661721640024.png",
                 "size": 154405
             }
         ],
@@ -127,12 +118,12 @@ const itemsCollection = [
         "color": "black",
         "type": "shoes",
         "description": "Front lace-up derby shoes",
-        "price": 163,
+        "price": 450,
         "size": [
             "36 38 40"
         ],
         "highlights": [
-            "dark brown",
+            "Black",
             " calf leather",
             " round toe",
             " branded insole",
@@ -141,44 +132,35 @@ const itemsCollection = [
         "image": [
             {
                 "fieldname": "images",
-                "originalname": "clarks-1.jpg",
+                "originalname": "clarks-1.png",
                 "encoding": "7bit",
-                "mimetype": "image/jpeg",
+                "mimetype": "image/png",
                 "destination": "./public/men",
-                "filename": "images-1661721815030.jpg",
-                "path": "public\\men\\images-1661721815030.jpg",
+                "filename": "images-1661721815030.png",
+                "path": "public\\men\\images-1661721815030.png",
                 "size": 49872
             },
             {
                 "fieldname": "images",
-                "originalname": "clarks-2.jpg",
+                "originalname": "clarks-2.png",
                 "encoding": "7bit",
-                "mimetype": "image/jpeg",
+                "mimetype": "image/png",
                 "destination": "./public/men",
-                "filename": "images-1661721815158.jpg",
-                "path": "public\\men\\images-1661721815158.jpg",
+                "filename": "images-1661721815158.png",
+                "path": "public\\men\\images-1661721815158.png",
                 "size": 39847
             },
             {
                 "fieldname": "images",
-                "originalname": "clarks-3.jpg",
+                "originalname": "clarks-3.png",
                 "encoding": "7bit",
-                "mimetype": "image/jpeg",
+                "mimetype": "image/png",
                 "destination": "./public/men",
-                "filename": "images-1661721815224.jpg",
-                "path": "public\\men\\images-1661721815224.jpg",
+                "filename": "images-1661721815224.png",
+                "path": "public\\men\\images-1661721815224.png",
                 "size": 39129
             },
-            {
-                "fieldname": "images",
-                "originalname": "clarks-4.jpg",
-                "encoding": "7bit",
-                "mimetype": "image/jpeg",
-                "destination": "./public/men",
-                "filename": "images-1661721815366.jpg",
-                "path": "public\\men\\images-1661721815366.jpg",
-                "size": 55810
-            }
+            
         ],
         "createdAt": "2022-08-28T21:23:35.374Z",
         "updatedAt": "2022-08-28T21:23:35.374Z",
@@ -186,12 +168,12 @@ const itemsCollection = [
     },
     {
         "_id": "630bdd620dd6605053c3f06e",
-        "name": "Valentino",
+        "name": "Zara",
         "category": "men",
         "color": "black",
         "type": "tshirt",
         "description": "Short-sleeved T-shirt",
-        "price": 351,
+        "price": 349,
         "size": [
             "XS",
             " S",
@@ -208,32 +190,32 @@ const itemsCollection = [
         "image": [
             {
                 "fieldname": "images",
-                "originalname": "valentino-1.jpg",
+                "originalname": "zara-1.png",
                 "encoding": "7bit",
-                "mimetype": "image/jpeg",
+                "mimetype": "image/png",
                 "destination": "./public/men",
-                "filename": "images-1661721954566.jpg",
-                "path": "public\\men\\images-1661721954566.jpg",
+                "filename": "images-1661721954566.png",
+                "path": "public\\men\\images-1661721954566.png",
                 "size": 16398
             },
             {
                 "fieldname": "images",
-                "originalname": "valentino-2.jpg",
+                "originalname": "zara-2.png",
                 "encoding": "7bit",
-                "mimetype": "image/jpeg",
+                "mimetype": "image/png",
                 "destination": "./public/men",
-                "filename": "images-1661721954567.jpg",
-                "path": "public\\men\\images-1661721954567.jpg",
+                "filename": "images-1661721954567.png",
+                "path": "public\\men\\images-1661721954567.png",
                 "size": 122304
             },
             {
                 "fieldname": "images",
-                "originalname": "valentino-3.jpg",
+                "originalname": "zara-3.png",
                 "encoding": "7bit",
-                "mimetype": "image/jpeg",
+                "mimetype": "image/png",
                 "destination": "./public/men",
-                "filename": "images-1661721954569.jpg",
-                "path": "public\\men\\images-1661721954569.jpg",
+                "filename": "images-1661721954569.png",
+                "path": "public\\men\\images-1661721954569.png",
                 "size": 78072
             }
         ],
@@ -243,12 +225,12 @@ const itemsCollection = [
     },
     {
         "_id": "630be0770dd6605053c3f081",
-        "name": "Versace",
+        "name": "Balenciaga",
         "category": "men",
-        "color": "black",
+        "color": "blue",
         "type": "jeans",
-        "description": "Medusa bootcut jeans",
-        "price": 503,
+        "description": "straight leg jeans",
+        "price": 999,
         "size": [
             "29",
             " 31",
@@ -256,7 +238,7 @@ const itemsCollection = [
             " 34"
         ],
         "highlights": [
-            "Black",
+            "Blue",
             " Cotton blend",
             " Gold-tone hardware",
             " Medusa head motif",
@@ -265,22 +247,32 @@ const itemsCollection = [
         "image": [
             {
                 "fieldname": "images",
-                "originalname": "versace 2.jpg",
+                "originalname": "balenciaga-1.png",
                 "encoding": "7bit",
-                "mimetype": "image/jpeg",
+                "mimetype": "image/png",
                 "destination": "./public/men",
-                "filename": "images-1661722743967.jpg",
-                "path": "public\\men\\images-1661722743967.jpg",
+                "filename": "images-1661722743967.png",
+                "path": "public\\men\\images-1661722743967.png",
                 "size": 31770
             },
             {
                 "fieldname": "images",
-                "originalname": "versace-1.jpg",
+                "originalname": "balenciaga-2.png",
                 "encoding": "7bit",
-                "mimetype": "image/jpeg",
+                "mimetype": "image/png",
                 "destination": "./public/men",
-                "filename": "images-1661722743967.jpg",
-                "path": "public\\men\\images-1661722743967.jpg",
+                "filename": "images-1661722743968.png",
+                "path": "public\\men\\images-1661722743968.png",
+                "size": 11436
+            },
+            {
+                "fieldname": "images",
+                "originalname": "balenciaga-3.png",
+                "encoding": "7bit",
+                "mimetype": "image/png",
+                "destination": "./public/men",
+                "filename": "images-1661722743969.png",
+                "path": "public\\men\\images-1661722743969.png",
                 "size": 11436
             }
         ],
@@ -292,17 +284,17 @@ const itemsCollection = [
         "_id": "630be0f50dd6605053c3f084",
         "name": "NIKE",
         "category": "men",
-        "color": "red",
+        "color": "black",
         "type": "shoes",
-        "description": "Air Force Sneakers",
-        "price": 161,
+        "description": "Black & White sneakers",
+        "price": 5550,
         "size": [
             "36",
             " 38",
             " 40"
         ],
         "highlights": [
-            "x100% leather",
+            "Black",
             " Flat rubber sole",
             " lace fastening",
             " Nike swoosh signature",
@@ -311,44 +303,35 @@ const itemsCollection = [
         "image": [
             {
                 "fieldname": "images",
-                "originalname": "airforce-1.jpg",
+                "originalname": "nike-1.png",
                 "encoding": "7bit",
-                "mimetype": "image/jpeg",
+                "mimetype": "image/png",
                 "destination": "./public/men",
-                "filename": "images-1661722869733.jpg",
-                "path": "public\\men\\images-1661722869733.jpg",
+                "filename": "images-1661722869733.png",
+                "path": "public\\men\\images-1661722869733.png",
                 "size": 54700
             },
             {
                 "fieldname": "images",
-                "originalname": "airforce-2.webp",
+                "originalname": "nike-2.png",
                 "encoding": "7bit",
-                "mimetype": "image/webp",
+                "mimetype": "image/png",
                 "destination": "./public/men",
-                "filename": "images-1661722869795.jpg",
-                "path": "public\\men\\images-1661722869795.jpg",
+                "filename": "images-1661722869795.png",
+                "path": "public\\men\\images-1661722869795.png",
                 "size": 57072
             },
             {
                 "fieldname": "images",
-                "originalname": "airforce-3.jpg",
+                "originalname": "nike-3.png",
                 "encoding": "7bit",
-                "mimetype": "image/jpeg",
+                "mimetype": "image/png",
                 "destination": "./public/men",
-                "filename": "images-1661722869827.jpg",
-                "path": "public\\men\\images-1661722869827.jpg",
+                "filename": "images-1661722869827.png",
+                "path": "public\\men\\images-1661722869827.png",
                 "size": 43746
             },
-            {
-                "fieldname": "images",
-                "originalname": "airforce-4.jpg",
-                "encoding": "7bit",
-                "mimetype": "image/jpeg",
-                "destination": "./public/men",
-                "filename": "images-1661722869886.jpg",
-                "path": "public\\men\\images-1661722869886.jpg",
-                "size": 44942
-            }
+            
         ],
         "createdAt": "2022-08-28T21:41:09.891Z",
         "updatedAt": "2022-08-28T21:41:09.891Z",
@@ -360,8 +343,8 @@ const itemsCollection = [
         "category": "men",
         "color": "pen",
         "type": "hoodie",
-        "description": "Tiger Head Hoodie",
-        "price": 281,
+        "description": "Front pocket Hoodie",
+        "price": 1399,
         "size": [
             "XS",
             " S",
@@ -379,32 +362,32 @@ const itemsCollection = [
         "image": [
             {
                 "fieldname": "images",
-                "originalname": "kenzo-tiger-1.jpg",
+                "originalname": "kenzo-1.png",
                 "encoding": "7bit",
-                "mimetype": "image/jpeg",
+                "mimetype": "image/png",
                 "destination": "./public/men",
-                "filename": "images-1661723063348.jpg",
-                "path": "public\\men\\images-1661723063348.jpg",
+                "filename": "images-1661723063348.png",
+                "path": "public\\men\\images-1661723063348.png",
                 "size": 271017
             },
             {
                 "fieldname": "images",
-                "originalname": "kenzo-tiger-2.jpg",
+                "originalname": "kenzo-2.png",
                 "encoding": "7bit",
-                "mimetype": "image/jpeg",
+                "mimetype": "image/png",
                 "destination": "./public/men",
-                "filename": "images-1661723063352.jpg",
-                "path": "public\\men\\images-1661723063352.jpg",
+                "filename": "images-1661723063352.png",
+                "path": "public\\men\\images-1661723063352.png",
                 "size": 275000
             },
             {
                 "fieldname": "images",
-                "originalname": "kenzo-tiger-head-3.jpg",
+                "originalname": "kenzo-3.png",
                 "encoding": "7bit",
-                "mimetype": "image/jpeg",
+                "mimetype": "image/png",
                 "destination": "./public/men",
-                "filename": "images-1661723063356.jpg",
-                "path": "public\\men\\images-1661723063356.jpg",
+                "filename": "images-1661723063356.png",
+                "path": "public\\men\\images-1661723063356.png",
                 "size": 169900
             }
         ],
@@ -414,12 +397,12 @@ const itemsCollection = [
     },
     {
         "_id": "630be4fb0dd6605053c3f095",
-        "name": "Les Tien",
+        "name": "Shein",
         "category": "men",
-        "color": "black",
-        "type": "short",
-        "description": "Track shorts",
-        "price": 237,
+        "color": "olive green",
+        "type": "trousers",
+        "description": "Track pants",
+        "price": 450,
         "size": [
             "XS",
             " S",
@@ -428,7 +411,7 @@ const itemsCollection = [
             " XL"
         ],
         "highlights": [
-            "navy blue",
+            "olive green",
             " cotton",
             " press stud detailing",
             " elasticated waistband",
@@ -439,32 +422,32 @@ const itemsCollection = [
         "image": [
             {
                 "fieldname": "images",
-                "originalname": "les-1.jpg",
+                "originalname": "shein-1.png",
                 "encoding": "7bit",
-                "mimetype": "image/jpeg",
+                "mimetype": "image/png",
                 "destination": "./public/men",
-                "filename": "images-1661723899489.jpg",
-                "path": "public\\men\\images-1661723899489.jpg",
+                "filename": "images-1661723899489.png",
+                "path": "public\\men\\images-1661723899489.png",
                 "size": 102876
             },
             {
                 "fieldname": "images",
-                "originalname": "les-2.jpg",
+                "originalname": "shein-2.png",
                 "encoding": "7bit",
-                "mimetype": "image/jpeg",
+                "mimetype": "image/png",
                 "destination": "./public/men",
-                "filename": "images-1661723899490.jpg",
-                "path": "public\\men\\images-1661723899490.jpg",
+                "filename": "images-1661723899490.png",
+                "path": "public\\men\\images-1661723899490.png",
                 "size": 153214
             },
             {
                 "fieldname": "images",
-                "originalname": "les-4.jpg",
+                "originalname": "shein-3.png",
                 "encoding": "7bit",
-                "mimetype": "image/jpeg",
+                "mimetype": "image/png",
                 "destination": "./public/men",
-                "filename": "images-1661723899493.jpg",
-                "path": "public\\men\\images-1661723899493.jpg",
+                "filename": "images-1661723899493.png",
+                "path": "public\\men\\images-1661723899493.png",
                 "size": 44160
             }
         ],
@@ -714,10 +697,10 @@ const itemsCollection = [
         "_id": "630c0ea6cacae4f0ab3bd5bb",
         "name": "Balenciaga",
         "category": "women",
-        "color": "brown",
+        "color": "white",
         "type": "shoes",
         "description": "Trrack-3 sneakers",
-        "price": 864,
+        "price": 979,
         "size": [
             "36 38 40"
         ],
@@ -733,44 +716,35 @@ const itemsCollection = [
         "image": [
             {
                 "fieldname": "images",
-                "originalname": "balenciaga-1.jpg",
+                "originalname": "balenciaga-1.png",
                 "encoding": "7bit",
-                "mimetype": "image/jpeg",
+                "mimetype": "image/png",
                 "destination": "./public/women",
-                "filename": "images-1661734565145.jpg",
-                "path": "public\\women\\images-1661734565145.jpg",
+                "filename": "images-1661734565145.png",
+                "path": "public\\women\\images-1661734565145.png",
                 "size": 71926
             },
             {
                 "fieldname": "images",
-                "originalname": "balenciaga-2.jpg",
+                "originalname": "balenciaga-2.png",
                 "encoding": "7bit",
-                "mimetype": "image/jpeg",
+                "mimetype": "image/png",
                 "destination": "./public/women",
-                "filename": "images-1661734565543.jpg",
-                "path": "public\\women\\images-1661734565543.jpg",
+                "filename": "images-1661734565543.png",
+                "path": "public\\women\\images-1661734565543.png",
                 "size": 59842
             },
             {
                 "fieldname": "images",
-                "originalname": "balenciaga-3.jpg",
+                "originalname": "balenciaga-3.png",
                 "encoding": "7bit",
-                "mimetype": "image/jpeg",
+                "mimetype": "image/png",
                 "destination": "./public/women",
-                "filename": "images-1661734565874.jpg",
-                "path": "public\\women\\images-1661734565874.jpg",
+                "filename": "images-1661734565874.png",
+                "path": "public\\women\\images-1661734565874.png",
                 "size": 58410
             },
-            {
-                "fieldname": "images",
-                "originalname": "balenciaga-4.jpg",
-                "encoding": "7bit",
-                "mimetype": "image/jpeg",
-                "destination": "./public/women",
-                "filename": "images-1661734566165.jpg",
-                "path": "public\\women\\images-1661734566165.jpg",
-                "size": 83622
-            }
+           
         ],
         "createdAt": "2022-08-29T00:56:06.172Z",
         "updatedAt": "2022-08-29T00:56:06.172Z",
@@ -778,12 +752,12 @@ const itemsCollection = [
     },
     {
         "_id": "630c0faccacae4f0ab3bd5be",
-        "name": "Off-white",
+        "name": "Libaz",
         "category": "women",
-        "color": "camel",
+        "color": "pink",
         "type": "dress",
-        "description": "Intarsia pencil skirt",
-        "price": 689,
+        "description": "Wide sleeve kurta set",
+        "price": 1129,
         "size": [
             "XS",
             " S",
@@ -800,48 +774,39 @@ const itemsCollection = [
             " Ribbed waistband",
             " "
         ],
-        "detail": "Irreverent brand Off-White puts a streetwear spin on a classic pencil silhouette, by adorning this pencil midi skirt with an all-over intarsia pattern of its signature Arrows logo. A contrasting neon-pink hem adds an extra distinctive touch, in tune with the label's creative aesthetic.",
+        "detail": "A stunning maroon embroidered kurti set paired with matching bottoms and a contrasting aqua-blue dupatta for an elegant ethnic look.",
         "image": [
             {
                 "fieldname": "images",
-                "originalname": "off-white-1.jpg",
+                "originalname": "libaz-1.png",
                 "encoding": "7bit",
-                "mimetype": "image/jpeg",
+                "mimetype": "image/png",
                 "destination": "./public/women",
-                "filename": "images-1661734828817.jpg",
-                "path": "public\\women\\images-1661734828817.jpg",
+                "filename": "images-1661734828817.png",
+                "path": "public\\women\\images-1661734828817.png",
                 "size": 193280
             },
             {
                 "fieldname": "images",
-                "originalname": "off-white-2.jpg",
+                "originalname": "libaz-2.png",
                 "encoding": "7bit",
-                "mimetype": "image/jpeg",
+                "mimetype": "image/png",
                 "destination": "./public/women",
-                "filename": "images-1661734828878.jpg",
-                "path": "public\\women\\images-1661734828878.jpg",
+                "filename": "images-1661734828878.png",
+                "path": "public\\women\\images-1661734828878.png",
                 "size": 61150
             },
             {
                 "fieldname": "images",
-                "originalname": "off-white-3.jpg",
+                "originalname": "libaz-3.png",
                 "encoding": "7bit",
-                "mimetype": "image/jpeg",
+                "mimetype": "image/png",
                 "destination": "./public/women",
-                "filename": "images-1661734828910.jpg",
-                "path": "public\\women\\images-1661734828910.jpg",
+                "filename": "images-1661734828910.png",
+                "path": "public\\women\\images-1661734828910.png",
                 "size": 66598
             },
-            {
-                "fieldname": "images",
-                "originalname": "off-white-4.jpg",
-                "encoding": "7bit",
-                "mimetype": "image/jpeg",
-                "destination": "./public/women",
-                "filename": "images-1661734828910.jpg",
-                "path": "public\\women\\images-1661734828910.jpg",
-                "size": 135676
-            }
+            
         ],
         "createdAt": "2022-08-29T01:00:28.917Z",
         "updatedAt": "2022-08-29T01:00:28.917Z",
@@ -849,66 +814,57 @@ const itemsCollection = [
     },
     {
         "_id": "630c106ecacae4f0ab3bd5c0",
-        "name": "Mugler",
+        "name": "New Balance",
         "category": "women",
-        "color": "brown",
+        "color": "red",
         "type": "dress",
-        "description": "Waist tailored trousers",
-        "price": 1077,
+        "description": "Puffed sleeve top",
+        "price": 559,
         "size": [
             "XL",
             " L"
         ],
         "highlights": [
-            "Brown",
-            " Cut-out detailing",
+            "Red",
+            " button detailing",
             " Tailored design",
             " Adjustable waist strap",
             " Concealed front fastening",
             " Pleat detailing"
         ],
-        "detail": "Mugler's AW22 collection includes this pair of straight-leg tailored trousers in a stone brown hue. True to the label's sculptural roots, the trousers feature a cut-out detail at the waist with an adjustable belt fastening.",
+        "detail": "A chic red top with statement puffed sleeves, adding a bold and feminine touch to any outfit.",
         "image": [
             {
                 "fieldname": "images",
-                "originalname": "mugler-1.jpg",
+                "originalname": "new-balance-1.png",
                 "encoding": "7bit",
-                "mimetype": "image/jpeg",
+                "mimetype": "image/png",
                 "destination": "./public/women",
-                "filename": "images-1661735021645.jpg",
-                "path": "public\\women\\images-1661735021645.jpg",
+                "filename": "images-1661735021645.png",
+                "path": "public\\women\\images-1661735021645.png",
                 "size": 19218
             },
             {
                 "fieldname": "images",
-                "originalname": "mugler-2.jpg",
+                "originalname": "new-balance-2.png",
                 "encoding": "7bit",
-                "mimetype": "image/jpeg",
+                "mimetype": "image/png",
                 "destination": "./public/women",
-                "filename": "images-1661735021727.jpg",
-                "path": "public\\women\\images-1661735021727.jpg",
+                "filename": "images-1661735021727.png",
+                "path": "public\\women\\images-1661735021727.png",
                 "size": 33190
             },
             {
                 "fieldname": "images",
-                "originalname": "mugler-3.jpg",
+                "originalname": "new-balance-3.png",
                 "encoding": "7bit",
-                "mimetype": "image/jpeg",
+                "mimetype": "image/png",
                 "destination": "./public/women",
-                "filename": "images-1661735021871.jpg",
-                "path": "public\\women\\images-1661735021871.jpg",
+                "filename": "images-1661735021871.png",
+                "path": "public\\women\\images-1661735021871.png",
                 "size": 38366
             },
-            {
-                "fieldname": "images",
-                "originalname": "mugler-4.jpg",
-                "encoding": "7bit",
-                "mimetype": "image/jpeg",
-                "destination": "./public/women",
-                "filename": "images-1661735022020.jpg",
-                "path": "public\\women\\images-1661735022020.jpg",
-                "size": 112282
-            }
+           
         ],
         "createdAt": "2022-08-29T01:03:42.079Z",
         "updatedAt": "2022-08-29T01:03:42.079Z",
@@ -916,12 +872,12 @@ const itemsCollection = [
     },
     {
         "_id": "630c12d8cacae4f0ab3bd5cf",
-        "name": "Jacquemus",
+        "name": "Berry",
         "category": "women",
-        "color": "black",
+        "color": "yellow",
         "type": "dress",
-        "description": "Robe Hielo dress",
-        "price": 407,
+        "description": "Organza yellow saree",
+        "price": 2499,
         "size": [
             "XS",
             " S",
@@ -930,43 +886,43 @@ const itemsCollection = [
             " XL"
         ],
         "highlights": [
-            "Black",
-            " Stretch wool",
+            "Yellow",
+            " Organza",
             " Cut-out detailing",
             " Contrast detailing",
             " Signature arrows motif",
             " Ribbed waistband"
         ],
-        "detail": "Simon Porte Jacquemus delivers innovative style with a timeless appeal. This wool-blend halterneck dress is given an alternative finish through contrast stitching, cut-outs and asymmetric details.",
+        "detail": "A graceful yellow organza saree that combines sheer elegance with a lightweight, flowy drape for a radiant ethnic look.        ",
         "image": [
             {
                 "fieldname": "images",
-                "originalname": "j-1.jpg",
+                "originalname": "berry-1.png",
                 "encoding": "7bit",
-                "mimetype": "image/jpeg",
+                "mimetype": "image/png",
                 "destination": "./public/women",
-                "filename": "images-1661735640671.jpg",
-                "path": "public\\women\\images-1661735640671.jpg",
+                "filename": "images-1661735640671.png",
+                "path": "public\\women\\images-1661735640671.png",
                 "size": 12772
             },
             {
                 "fieldname": "images",
-                "originalname": "jacquemus-2.jpg",
+                "originalname": "berry-2.png",
                 "encoding": "7bit",
-                "mimetype": "image/jpeg",
+                "mimetype": "image/png",
                 "destination": "./public/women",
-                "filename": "images-1661735640672.jpg",
-                "path": "public\\women\\images-1661735640672.jpg",
+                "filename": "images-1661735640672.png",
+                "path": "public\\women\\images-1661735640672.png",
                 "size": 32058
             },
             {
                 "fieldname": "images",
-                "originalname": "jacquemus-3.jpg",
+                "originalname": "berry-3.png",
                 "encoding": "7bit",
-                "mimetype": "image/jpeg",
+                "mimetype": "image/png",
                 "destination": "./public/women",
-                "filename": "images-1661735640672.jpg",
-                "path": "public\\women\\images-1661735640672.jpg",
+                "filename": "images-1661735640673.png",
+                "path": "public\\women\\images-1661735640673.png",
                 "size": 29422
             }
         ],
