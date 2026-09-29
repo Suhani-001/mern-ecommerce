@@ -1,62 +1,451 @@
+.myaccount__page {
+    width: calc(100% - 80px);
+    max-width: 1450px;
+    min-height: calc(100vh - 125px);
 
-.order__history__container {
-    height: 200px;
-    width: 70%;
+    margin: 0 auto;
+
+    background-color: #f5f3ef;
+
+    padding: 50px 50px 70px;
+
+    box-sizing: border-box;
+}
+
+
+/* PAGE HEADER */
+
+.myaccount__heading {
+    margin-bottom: 45px;
+}
+
+.myaccount__heading p {
+    margin: 0 0 8px;
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    letter-spacing: 3px;
+
+    color: #777;
+}
+
+.myaccount__heading h1 {
+    margin: 0;
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 38px;
+    font-weight: 700;
+
+    color: #111;
+}
+
+
+/* TWO COLUMN LAYOUT */
+
+.myaccount__content {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 25px;
+
+    align-items: stretch;
+}
+
+
+/* COMMON CARD */
+
+.account__section {
+    background-color: #fff;
+
+    border-radius: 14px;
+
+    padding: 35px;
+
+    box-sizing: border-box;
+
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.07);
+}
+
+
+/* ACCOUNT DETAILS */
+
+.profile__section {
+    width: 100%;
+}
+
+.profile__header {
+    width: 100%;
+
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-self: flex-start;
-}
 
-.order__history {
-    height: auto;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-}
-
-.order__history__header {
-    width: 100%;
-    height: 50px;
-    font-size: 1.7rem;
-    font-weight: bolder;
-}
-
-.order__history__detail {
-    width: 100%;
-    height: 50px;
-}
-
-.account__details__container {
-    width: 30%;
-    height: 200px;
-}
-
-.account__details__header {
-    width: 100%;
-    height: 50px;
-    display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+
+    align-items: flex-start;
 }
 
-@media (max-width: 780px) {
-    .account__details__header {
+
+/* SMALL LABEL */
+
+.section__small {
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    color: #888;
+}
+
+
+/* HEADINGS */
+
+.account__section h2 {
+    margin: 0;
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 25px;
+
+    font-weight: 700;
+
+    color: #111;
+}
+
+
+/* LOGOUT */
+
+.logout__button {
+    padding: 8px 17px;
+
+    border: 1px solid #000;
+
+    border-radius: 5px;
+
+    background-color: transparent;
+
+    color: #000;
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+.logout__button:hover {
+    background-color: #000;
+
+    color: #fff;
+}
+
+
+/* PROFILE */
+
+.profile__card {
+    width: 100%;
+
+    margin-top: 35px;
+
+    padding: 25px;
+
+    box-sizing: border-box;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 22px;
+
+    background-color: #f7f6f3;
+
+    border-radius: 10px;
+}
+
+
+/* AVATAR */
+
+.profile__avatar {
+    min-width: 65px;
+
+    height: 65px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    border-radius: 50%;
+
+    background-color: #000;
+
+    color: #fff;
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 25px;
+
+    font-weight: 700;
+}
+
+
+/* USER INFORMATION */
+
+.profile__info {
+    width: 100%;
+}
+
+.profile__item {
+    width: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    padding: 10px 0;
+
+    border-bottom: 1px solid #ddd;
+}
+
+.profile__item:last-child {
+    border-bottom: none;
+}
+
+.profile__item span {
+    margin-bottom: 5px;
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 10px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+
+    color: #888;
+}
+
+.profile__item strong {
+    font-family: "Manrope", sans-serif;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    color: #222;
+}
+
+
+/* MANAGE ACCOUNT */
+
+.manage__button {
+    display: block;
+
+    width: 100%;
+
+    margin-top: 25px;
+
+    padding: 13px 20px;
+
+    box-sizing: border-box;
+
+    text-align: center;
+
+    border: 1px solid #000;
+
+    border-radius: 6px;
+
+    background-color: #e5e5e5;
+
+    color: #000;
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    text-decoration: none;
+
+    transition: 0.3s ease;
+}
+
+.manage__button:hover {
+    background-color: #000;
+
+    color: #fff;
+
+    text-decoration: none;
+}
+
+
+/* ORDER HISTORY */
+
+.order__section {
+    width: 100%;
+}
+
+.empty__orders {
+    width: 100%;
+
+    margin-top: 35px;
+
+    padding: 45px 25px;
+
+    box-sizing: border-box;
+
+    text-align: center;
+
+    border: 1px dashed #d0d0d0;
+
+    border-radius: 10px;
+}
+
+
+/* EMPTY ICON */
+
+.empty__icon {
+    width: 55px;
+
+    height: 55px;
+
+    margin: 0 auto 18px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    border-radius: 50%;
+
+    background-color: #f1efeb;
+
+    font-size: 23px;
+}
+
+
+/* EMPTY ORDER TEXT */
+
+.empty__orders h3 {
+    margin: 0 0 8px;
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 18px;
+
+    color: #222;
+}
+
+.empty__orders p {
+    max-width: 320px;
+
+    margin: 0 auto 25px;
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+
+    color: #777;
+}
+
+
+/* SHOP NOW */
+
+.shop__button {
+    display: inline-block;
+
+    padding: 11px 25px;
+
+    border: 1px solid #000;
+
+    border-radius: 6px;
+
+    background-color: #000;
+
+    color: #fff;
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    text-decoration: none;
+
+    transition: 0.3s ease;
+}
+
+.shop__button:hover {
+    background-color: #e5e5e5;
+
+    color: #000;
+
+    text-decoration: none;
+}
+
+
+/* TABLET */
+
+@media screen and (max-width: 850px) {
+
+    .myaccount__content {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* MOBILE */
+@media screen and (max-width: 550px) {
+
+    .myaccount__page {
+        width: calc(100% - 20px);
+        margin: 0 auto;
+
+        padding: 35px 18px 50px;
+    }
+
+    .myaccount__heading h1 {
+        font-size: 28px;
+    }
+
+    .account__section {
+        padding: 25px 20px;
+    }
+
+    .profile__header {
         flex-direction: column;
-        height: auto;
+        gap: 15px;
+    }
+
+    .profile__card {
+        flex-direction: column;
         align-items: flex-start;
     }
-}
 
-.details__header {
-    width: 80%;
-    height: auto;
-    font-size: 1.7rem;
-    font-weight: bolder;
-}
+    .profile__avatar {
+        min-width: 55px;
+        height: 55px;
+        font-size: 21px;
+    }
 
-.logout__action {
-    width: 20%;
-    height: auto;
 }
