@@ -1,3 +1,4 @@
+
 import { useEffect, useState } from "react";
 import { BrowserRouter as Router } from 'react-router-dom';
 import { Route, Routes } from 'react-router-dom';
@@ -28,8 +29,40 @@ import Contact from '../components/Footer/Help/Contact';
 
 function App() {
 
+  const [showTopButton, setShowTopButton] = useState(false);
+
+  useEffect(() => {
+
+    const handleScroll = () => {
+
+      if (window.scrollY > 300) {
+        setShowTopButton(true);
+      } else {
+        setShowTopButton(false);
+      }
+
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+
+  }, []);
+
+  const scrollToTop = () => {
+
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+
+  };
+
   return (
-   <CartItemsProvider>
+    <CartItemsProvider>
+
       <WishItemsProvider>
 
         <SearchProvider>
@@ -39,49 +72,90 @@ function App() {
             <Header />
 
             <Routes>
-              <Route index element={<Home />}/>
+
+              {/* HOME */}
+              <Route index element={<Home />} />
+
+              {/* ACCOUNT */}
               <Route path="/account">
-                <Route path="me" element={<MyAccount/>}/>
-                <Route path="manage" element={<ManageAccount/>}/>
-                <Route path="login" element={<Login />}/>
-                <Route path="register" element={<Register />}/>
-                <Route path="*" element={<Login />}/>
+                <Route path="me" element={<MyAccount />} />
+                <Route path="manage" element={<ManageAccount />} />
+                <Route path="login" element={<Login />} />
+                <Route path="register" element={<Register />} />
+                <Route path="*" element={<Login />} />
               </Route>
-              <Route path="/shop" element={<Shop />}/>
+
+              {/* SHOP */}
+              <Route path="/shop" element={<Shop />} />
+
+              {/* CHECKOUT */}
+              <Route path="/checkout" element={<Checkout />} />
+
+              {/* CATEGORY */}
               <Route path="/category">
-                <Route path=":id" element={<CategoryView />}/>
+                <Route path=":id" element={<CategoryView />} />
               </Route>
+
+              {/* PRODUCT */}
               <Route path="/item">
 
                 <Route path="/item/men">
-                  <Route path=":id" element={<ItemView />}/>
+                  <Route path=":id" element={<ItemView />} />
                 </Route>
+
                 <Route path="/item/women">
-                  <Route path=":id" element={<ItemView />}/>
+                  <Route path=":id" element={<ItemView />} />
                 </Route>
+
                 <Route path="/item/kids">
-                  <Route path=":id" element={<ItemView />}/>
+                  <Route path=":id" element={<ItemView />} />
                 </Route>
+
                 <Route path="/item/featured">
-                  <Route path=":id" element={<ItemView />}/>
+                  <Route path=":id" element={<ItemView />} />
                 </Route>
 
               </Route>
+
+              {/* WISHLIST */}
               <Route path="/wishlist" element={<Wishlist />} />
+
+              {/* SEARCH */}
               <Route path="/search/*" element={<SearchView />} />
+
+              {/* FOOTER HELP PAGES */}
+              <Route path="/shipping" element={<Shipping />} />
+              <Route path="/refund" element={<Refund />} />
+              <Route path="/faq" element={<FAQ />} />
+              <Route path="/contact" element={<Contact />} />
+
             </Routes>
+
             <Footer />
+
+            {/* ADMIN */}
             <Routes>
-            <Route path="/admin" element={<Wishlist />} />
+              <Route path="/admin" element={<Wishlist />} />
             </Routes>
+
+            {/* BACK TO TOP */}
+            {showTopButton && (
+              <button
+                className="back__to__top"
+                onClick={scrollToTop}
+              >
+                ↑
+              </button>
+            )}
+
           </Router>
 
         </SearchProvider>
 
       </WishItemsProvider>
-   </CartItemsProvider>
-  );
 
+    </CartItemsProvider>
+  );
 }
 
 export default App;
