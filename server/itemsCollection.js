@@ -932,11 +932,11 @@ const itemsCollection = [
     },
     {
         "_id": "630c1455cacae4f0ab3bd5d6",
-        "name": "Stella Kids",
+        "name": "Libaz",
         "category": "kids",
-        "color": "black",
+        "color": "green",
         "type": "dress",
-        "description": "Drawstring cargo track pants",
+        "description": "Green cotton kurta",
         "price": 878,
         "size": [
             "2yrs",
@@ -946,44 +946,35 @@ const itemsCollection = [
             " 6yrs"
         ],
         "highlights": [
-            "Black",
+            "green",
             " Cotton",
             " Elasticated drawstring waistband",
-            " Two side cargo pockets",
-            " Two diagonal pockets to the sides"
+            " Two side pockets"
+            
         ],
-        "detail": "Drawstring cargo track pants",
+        "detail": "A charming green cotton kurta for kids, featuring an elasticated drawstring waistband and two side pockets for added convenience and style.",
         "image": [
             {
                 "fieldname": "images",
-                "originalname": "stella-1.jpg",
+                "originalname": "libaz-1.png",
                 "encoding": "7bit",
-                "mimetype": "image/jpeg",
+                "mimetype": "image/png",
                 "destination": "./public/kids",
-                "filename": "images-1661736021736.jpg",
-                "path": "public\\kids\\images-1661736021736.jpg",
+                "filename": "images-1661736021736.png",
+                "path": "public\\kids\\images-1661736021736.png",
                 "size": 11674
             },
             {
                 "fieldname": "images",
-                "originalname": "stella-2.jpg",
+                "originalname": "libaz-2.png",
                 "encoding": "7bit",
-                "mimetype": "image/jpeg",
+                "mimetype": "image/png",
                 "destination": "./public/kids",
-                "filename": "images-1661736021737.jpg",
-                "path": "public\\kids\\images-1661736021737.jpg",
+                "filename": "images-1661736021737.png",
+                "path": "public\\kids\\images-1661736021737.png",
                 "size": 13890
             },
-            {
-                "fieldname": "images",
-                "originalname": "stella-3.jpg",
-                "encoding": "7bit",
-                "mimetype": "image/jpeg",
-                "destination": "./public/kids",
-                "filename": "images-1661736021737.jpg",
-                "path": "public\\kids\\images-1661736021737.jpg",
-                "size": 97757
-            }
+            
         ],
         "createdAt": "2022-08-29T01:20:21.742Z",
         "updatedAt": "2022-08-29T01:20:21.742Z",
@@ -991,15 +982,15 @@ const itemsCollection = [
     },
     {
         "_id": "630c1609cacae4f0ab3bd5e0",
-        "name": "Molo",
+        "name": "Dream Paris",
         "category": "kids",
-        "color": "black",
+        "color": "blue",
         "type": "dress",
-        "description": "Teen denim skirt",
-        "price": 91,
+        "description": "Teen denim dress",
+        "price": 910,
         "size": [
-            "14yrs",
-            " 16yrs"
+            "10yrs",
+            " 14yrs"
         ],
         "highlights": [
             "Indigo blue",
@@ -1008,37 +999,27 @@ const itemsCollection = [
             " Belt loops",
             " Front button fastening"
         ],
-        "detail": "Teen denim skirt. Cotton 72%, Recycled Polyester 27%, Elastane 1%",
+        "detail": "Teen denim dress. Cotton 72%, Recycled Polyester 27%, Elastane 1%",
         "image": [
             {
                 "fieldname": "images",
-                "originalname": "molo-1.jpg",
+                "originalname": "dream-paris-1.png",
                 "encoding": "7bit",
-                "mimetype": "image/jpeg",
+                "mimetype": "image/png",
                 "destination": "./public/kids",
-                "filename": "images-1661736457211.jpg",
-                "path": "public\\kids\\images-1661736457211.jpg",
+                "filename": "images-1661736457211.png",
+                "path": "public\\kids\\images-1661736457211.png",
                 "size": 149094
             },
             {
                 "fieldname": "images",
-                "originalname": "molo-2.jpg",
+                "originalname": "dream-paris-2.png",
                 "encoding": "7bit",
-                "mimetype": "image/jpeg",
+                "mimetype": "image/png",
                 "destination": "./public/kids",
-                "filename": "images-1661736457387.jpg",
-                "path": "public\\kids\\images-1661736457387.jpg",
+                "filename": "images-1661736457387.png",
+                "path": "public\\kids\\images-1661736457387.png",
                 "size": 147495
-            },
-            {
-                "fieldname": "images",
-                "originalname": "molo-3.jpg",
-                "encoding": "7bit",
-                "mimetype": "image/jpeg",
-                "destination": "./public/kids",
-                "filename": "images-1661736457389.jpg",
-                "path": "public\\kids\\images-1661736457389.jpg",
-                "size": 327062
             }
         ],
         "createdAt": "2022-08-29T01:27:37.394Z",
@@ -1047,15 +1028,15 @@ const itemsCollection = [
     },
     {
         "_id": "630c17d9cacae4f0ab3bd5ef",
-        "name": "Adidas Yeezy",
+        "name": "Blink",
         "category": "kids",
-        "color": "#516E04",
+        "color": "white",
         "type": "shoes",
-        "description": "Foam runner sneakers",
-        "price": 227,
+        "description": "white sandals",
+        "price": 549,
         "size": [
-            "14yrs",
-            " 16yrs"
+            "10yrs",
+            " 12yrs"
         ],
         "highlights": [
             "Foam rubber",
@@ -1064,48 +1045,30 @@ const itemsCollection = [
             " Alimond toe",
             " Rubber sole"
         ],
-        "detail": "The adidas YEEZY Kids Foam Runner arrives in an Stone Sage colour scheme. Designed by musical artist and creative Ye, this shoe first debuted on the soles of his daughter North West in 2019. They're known for their futuristic design and lightweight construction - which consists of EVA foam and harvested algae.",
+        "detail": "Beautiful white sandals for kids, perfect for casual wear and outdoor activities.",
         "image": [
             {
                 "fieldname": "images",
-                "originalname": "adidas-1.jpg",
+                "originalname": "blink-1.png",
                 "encoding": "7bit",
-                "mimetype": "image/jpeg",
+                "mimetype": "image/png",
                 "destination": "./public/kids",
-                "filename": "images-1661736921199.jpg",
-                "path": "public\\kids\\images-1661736921199.jpg",
+                "filename": "images-1661736921199.png",
+                "path": "public\\kids\\images-1661736921199.png",
                 "size": 46290
             },
             {
                 "fieldname": "images",
-                "originalname": "adidas-3.jpg",
+                "originalname": "blink-2.png",
                 "encoding": "7bit",
-                "mimetype": "image/jpeg",
+                "mimetype": "image/png",
                 "destination": "./public/kids",
-                "filename": "images-1661736921199.jpg",
-                "path": "public\\kids\\images-1661736921199.jpg",
+                "filename": "images-1661736921198.png",
+                "path": "public\\kids\\images-1661736921198.png",
                 "size": 43170
-            },
-            {
-                "fieldname": "images",
-                "originalname": "adidas-4.jpg",
-                "encoding": "7bit",
-                "mimetype": "image/jpeg",
-                "destination": "./public/kids",
-                "filename": "images-1661736921200.jpg",
-                "path": "public\\kids\\images-1661736921200.jpg",
-                "size": 46052
-            },
-            {
-                "fieldname": "images",
-                "originalname": "adidas-5.jpg",
-                "encoding": "7bit",
-                "mimetype": "image/jpeg",
-                "destination": "./public/kids",
-                "filename": "images-1661736921202.jpg",
-                "path": "public\\kids\\images-1661736921202.jpg",
-                "size": 51168
             }
+            
+            
         ],
         "createdAt": "2022-08-29T01:35:21.206Z",
         "updatedAt": "2022-08-29T01:35:21.206Z",
@@ -1113,12 +1076,12 @@ const itemsCollection = [
     },
     {
         "_id": "630c1989772ad2014230cd4a",
-        "name": "Stella Kids",
+        "name": "H&M",
         "category": "kids",
         "color": "black",
         "type": "dress",
         "description": "Color-block coat",
-        "price": 189,
+        "price": 249,
         "size": [
             "14yrs",
             " 16yrs"
@@ -1135,32 +1098,32 @@ const itemsCollection = [
         "image": [
             {
                 "fieldname": "images",
-                "originalname": "stellaMc-1.jpg",
+                "originalname": "h&m-1.png",
                 "encoding": "7bit",
-                "mimetype": "image/jpeg",
+                "mimetype": "image/png",
                 "destination": "./public/kids",
-                "filename": "images-1661737353733.jpg",
-                "path": "public\\kids\\images-1661737353733.jpg",
+                "filename": "images-1661737353733.png",
+                "path": "public\\kids\\images-1661737353733.png",
                 "size": 45516
             },
             {
                 "fieldname": "images",
-                "originalname": "stellaMc-2.jpg",
+                "originalname": "h&m-2.png",
                 "encoding": "7bit",
-                "mimetype": "image/jpeg",
+                "mimetype": "image/png",
                 "destination": "./public/kids",
-                "filename": "images-1661737353734.jpg",
-                "path": "public\\kids\\images-1661737353734.jpg",
+                "filename": "images-1661737353734.png",
+                "path": "public\\kids\\images-1661737353734.png",
                 "size": 28138
             },
             {
                 "fieldname": "images",
-                "originalname": "stellaMc-3.jpg",
+                "originalname": "h&m-3.png",
                 "encoding": "7bit",
-                "mimetype": "image/jpeg",
+                "mimetype": "image/png",
                 "destination": "./public/kids",
-                "filename": "images-1661737353736.jpg",
-                "path": "public\\kids\\images-1661737353736.jpg",
+                "filename": "images-1661737353736.png",
+                "path": "public\\kids\\images-1661737353736.png",
                 "size": 48292
             }
         ],
@@ -1170,18 +1133,18 @@ const itemsCollection = [
     },
     {
         "_id": "630cc913d57cdfd0d9b80538",
-        "name": "Bobo Choses",
+        "name": "ZARA",
         "category": "kids",
-        "color": "brown",
+        "color": "green",
         "type": "dress",
         "description": "Crew-neck sweatshirt",
-        "price": 67,
+        "price": 679,
         "size": [
-            "14yrs",
-            " 16yrs"
+            "11yrs",
+            " 14yrs"
         ],
         "highlights": [
-            "Beige",
+            "green",
             "Cotton",
             "Graphic print tothe front",
             "Logo print to the front",
@@ -1191,34 +1154,25 @@ const itemsCollection = [
         "image": [
             {
                 "fieldname": "images",
-                "originalname": "bobo-1.jpg",
+                "originalname": "zara-1.png",
                 "encoding": "7bit",
-                "mimetype": "image/jpeg",
+                "mimetype": "image/png",
                 "destination": "./public/kids",
-                "filename": "images-1661782291990.jpg",
-                "path": "public\\kids\\images-1661782291990.jpg",
+                "filename": "images-1661782291990.png",
+                "path": "public\\kids\\images-1661782291990.png",
                 "size": 57038
             },
             {
                 "fieldname": "images",
-                "originalname": "bobo-2.jpg",
+                "originalname": "zara-2.png",
                 "encoding": "7bit",
-                "mimetype": "image/jpeg",
+                "mimetype": "image/png",
                 "destination": "./public/kids",
-                "filename": "images-1661782291991.jpg",
-                "path": "public\\kids\\images-1661782291991.jpg",
+                "filename": "images-1661782291991.png",
+                "path": "public\\kids\\images-1661782291991.png",
                 "size": 41412
-            },
-            {
-                "fieldname": "images",
-                "originalname": "bobo-3.jpg",
-                "encoding": "7bit",
-                "mimetype": "image/jpeg",
-                "destination": "./public/kids",
-                "filename": "images-1661782291992.jpg",
-                "path": "public\\kids\\images-1661782291992.jpg",
-                "size": 259726
             }
+          
         ],
         "createdAt": "2022-08-29T14:11:32.015Z",
         "updatedAt": "2022-08-29T14:11:32.015Z",
@@ -1226,56 +1180,47 @@ const itemsCollection = [
     },
     {
         "_id": "630ccacfd57cdfd0d9b80548",
-        "name": "Stella Kids",
+        "name": "Berry",
         "category": "kids",
-        "color": "brown",
-        "type": "shoes",
-        "description": "Color-block boots",
-        "price": 189,
+        "color": "white",
+        "type": "dress",
+        "description": "white cotton dress",
+        "price": 1099,
         "size": [
-            "14yrs",
-            " 16yrs"
+            "8yrs",
+            " 12yrs"
         ],
         "highlights": [
             "Multicolor",
             " Color-block paneled design",
             " Front lace-up fastening",
             " Long pull-tab at the heel ",
-            " Ankle length",
-            " Round toe"
+            " mid length"
+            
         ],
-        "detail": "Color-block lace-up boots",
+        "detail": "white  cotton dress with multicolour sleeves and front lace-up fastening, perfect for a stylish and comfortable look for kids.",
         "image": [
             {
                 "fieldname": "images",
-                "originalname": "stellaMc1-1.jpg",
+                "originalname": "berry-1.png",
                 "encoding": "7bit",
-                "mimetype": "image/jpeg",
+                "mimetype": "image/png",
                 "destination": "./public/kids",
-                "filename": "images-1661782735745.jpg",
-                "path": "public\\kids\\images-1661782735745.jpg",
+                "filename": "images-1661782735745.png",
+                "path": "public\\kids\\images-1661782735745.png",
                 "size": 63048
             },
             {
                 "fieldname": "images",
-                "originalname": "stellaMc1-2.jpg",
+                "originalname": "berry-2.png",
                 "encoding": "7bit",
-                "mimetype": "image/jpeg",
+                "mimetype": "image/png",
                 "destination": "./public/kids",
-                "filename": "images-1661782735746.jpg",
-                "path": "public\\kids\\images-1661782735746.jpg",
+                "filename": "images-1661782735746.png",
+                "path": "public\\kids\\images-1661782735746.png",
                 "size": 47620
-            },
-            {
-                "fieldname": "images",
-                "originalname": "stellaMc1-3.jpg",
-                "encoding": "7bit",
-                "mimetype": "image/jpeg",
-                "destination": "./public/kids",
-                "filename": "images-1661782735747.jpg",
-                "path": "public\\kids\\images-1661782735747.jpg",
-                "size": 112840
             }
+           
         ],
         "createdAt": "2022-08-29T14:18:55.756Z",
         "updatedAt": "2022-08-29T14:18:55.756Z",
@@ -1283,75 +1228,57 @@ const itemsCollection = [
     },
     {
         "_id": "630ccc27d57cdfd0d9b8054e",
-        "name": "Mini Rodini",
+        "name": "Hello Kitty",
         "category": "kids",
-        "color": "brown",
+        "color": "white",
         "type": "bag",
-        "description": "Penguin-print backpack",
-        "price": 54,
+        "description": "white and red hello kitty backpack",
+        "price": 540,
         "size": [
             "14yrs",
             " 16yrs"
         ],
         "highlights": [
-            "Light brown",
-            " All-over penguin print",
+            "white and red",
+            "hello kitty design",
             " Embroidered logo to the front",
             " Single flat top handle",
             " Front zip fastening"
         ],
-        "detail": "All over Penguin-print backpack",
+        "detail": "white and red hello kitty backpack with embroidered logo to the front, single flat top handle, and front zip fastening, perfect for carrying essentials in style.",
         "image": [
             {
                 "fieldname": "images",
-                "originalname": "rodini-1.jpg",
+                "originalname": "kitty-1.png",
                 "encoding": "7bit",
-                "mimetype": "image/jpeg",
+                "mimetype": "image/png",
                 "destination": "./public/kids",
-                "filename": "images-1661783079519.jpg",
-                "path": "public\\kids\\images-1661783079519.jpg",
+                "filename": "images-1661783079519.png",
+                "path": "public\\kids\\images-1661783079519.png",
                 "size": 147915
             },
             {
                 "fieldname": "images",
-                "originalname": "rodini-2.jpg",
+                "originalname": "kitty-2.png",
                 "encoding": "7bit",
-                "mimetype": "image/jpeg",
+                "mimetype": "image/png",
                 "destination": "./public/kids",
-                "filename": "images-1661783079523.jpg",
-                "path": "public\\kids\\images-1661783079523.jpg",
+                "filename": "images-1661783079523.png",
+                "path": "public\\kids\\images-1661783079523.png",
                 "size": 133589
             },
             {
                 "fieldname": "images",
-                "originalname": "rodini-3.jpg",
+                "originalname": "kitty-3.png",
                 "encoding": "7bit",
-                "mimetype": "image/jpeg",
+                "mimetype": "image/png",
                 "destination": "./public/kids",
-                "filename": "images-1661783079526.jpg",
-                "path": "public\\kids\\images-1661783079526.jpg",
-                "size": 150192
-            },
-            {
-                "fieldname": "images",
-                "originalname": "rodini-4.jpg",
-                "encoding": "7bit",
-                "mimetype": "image/jpeg",
-                "destination": "./public/kids",
-                "filename": "images-1661783079636.jpg",
-                "path": "public\\kids\\images-1661783079636.jpg",
-                "size": 118670
-            },
-            {
-                "fieldname": "images",
-                "originalname": "rodini-5.jpg",
-                "encoding": "7bit",
-                "mimetype": "image/jpeg",
-                "destination": "./public/kids",
-                "filename": "images-1661783079638.jpg",
-                "path": "public\\kids\\images-1661783079638.jpg",
+                "filename": "images-1661783079526.png",
+                "path": "public\\kids\\images-1661783079526.png",
                 "size": 150192
             }
+           
+           
         ],
         "createdAt": "2022-08-29T14:24:39.645Z",
         "updatedAt": "2022-08-29T14:24:39.645Z",
@@ -1359,15 +1286,15 @@ const itemsCollection = [
     },
     {
         "_id": "630cccf6d57cdfd0d9b80552",
-        "name": "VEJA Kids",
+        "name": "VEJA",
         "category": "kids",
         "color": "#264C0E",
         "type": "shoes",
-        "description": "Nautico suede sneakers",
-        "price": 96,
+        "description": "Kids sneakers",
+        "price": 879,
         "size": [
-            "14yrs",
-            " 16yrs"
+            "3yrs",
+            " 5yrs"
         ],
         "highlights": [
             "Olive green",
@@ -1377,38 +1304,29 @@ const itemsCollection = [
             " Round toe",
             " Front touch-strap fastening"
         ],
-        "detail": "Nautico suede sneakers",
+        "detail": "kids sneakers",
         "image": [
             {
                 "fieldname": "images",
-                "originalname": "veja-1.jpg",
+                "originalname": "veja-1.png",
                 "encoding": "7bit",
-                "mimetype": "image/jpeg",
+                "mimetype": "image/png",
                 "destination": "./public/kids",
-                "filename": "images-1661783286536.jpg",
-                "path": "public\\kids\\images-1661783286536.jpg",
+                "filename": "images-1661783286536.png",
+                "path": "public\\kids\\images-1661783286536.png",
                 "size": 81799
             },
             {
                 "fieldname": "images",
-                "originalname": "veja-2.jpg",
+                "originalname": "veja-2.png",
                 "encoding": "7bit",
-                "mimetype": "image/jpeg",
+                "mimetype": "image/png",
                 "destination": "./public/kids",
-                "filename": "images-1661783286537.jpg",
-                "path": "public\\kids\\images-1661783286537.jpg",
+                "filename": "images-1661783286537.png",
+                "path": "public\\kids\\images-1661783286537.png",
                 "size": 57838
             },
-            {
-                "fieldname": "images",
-                "originalname": "veja-3.jpg",
-                "encoding": "7bit",
-                "mimetype": "image/jpeg",
-                "destination": "./public/kids",
-                "filename": "images-1661783286538.jpg",
-                "path": "public\\kids\\images-1661783286538.jpg",
-                "size": 111178
-            }
+            
         ],
         "createdAt": "2022-08-29T14:28:06.542Z",
         "updatedAt": "2022-08-29T14:28:06.542Z",
