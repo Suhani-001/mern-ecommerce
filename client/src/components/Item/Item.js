@@ -15,8 +15,7 @@ const Item = (props) => {
                 <Description item={props.item}/>
             </div>
             <div className="related__items__container">
-                <Related category={props.item.category}/>
-            </div>
+                <Related category={props.item.category} itemId={props.item._id}/>        </div>
         </div>
      );
 }

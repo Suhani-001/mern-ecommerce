@@ -1,32 +1,29 @@
-
 .product__detail__container {
     width: 50%;
-    min-width: 300px;
-    height: 100%;
-    display: flex;
-}
-
-.product__form {
-    width: 60%;
-    height: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
-}
-
-.product__detail {
-    width: 100%;
+    min-width: 350px;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    box-sizing: border-box;
 }
 
+.product__detail {
+    width: 85%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    font-family: "Manrope", sans-serif;
+}
+
+/* =========================
+   PRODUCT INFORMATION
+========================= */
+
 .product__main__detail {
-    width: 60%;
-    height: 50%;
+    width: 100%;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -34,152 +31,347 @@
 }
 
 .product__name__main {
-    justify-content: flex-start;
-    align-self: flex-start;
     width: 100%;
-    height: 40%;
-    font-size: 1.7rem;
-    font-weight: 700;
-}
+    margin-bottom: 8px;
 
+    font-size: 30px;
+    font-weight: 700;
+    color: #111;
+}
 
 .product__detail__description {
-    justify-content: flex-start;
-    align-self: flex-start;
     width: 100%;
-    height: 30%;
-    font-size: 1.2rem;
+    margin-bottom: 18px;
+
+    font-size: 17px;
+    color: #333;
 }
 
+/* =========================
+   COLOR
+========================= */
 
 .product__color {
+    width: 100%;
+    height: 35px;
+
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    flex-direction: row;
-    width: 100%;
-    height: 50px;
-    font-size: 1.2rem;
+    gap: 15px;
+
+    font-size: 14px;
 }
 
 .product-color-label {
-    width: 20%;
-    height: 100%;
+    width: auto;
+    height: auto;
+
     display: flex;
-    justify-content: flex-start;
     align-items: center;
+
+    font-size: 14px;
+    color: #333;
 }
 
 .product-color {
     width: 20px;
     height: 20px;
-    border-radius: 20px;
+
+    border-radius: 50%;
+    border: 1px solid #ccc;
 }
+
+/* =========================
+   PRICE
+========================= */
 
 .product__price__detail {
-    height: 100px;
+    height: auto;
+    margin-top: 35px;
+    margin-bottom: 25px;
+
     display: flex;
     align-items: center;
-    font-size: 1.4rem;
+
+    font-size: 25px;
     font-weight: 700;
+    color: #111;
 }
 
-.product__quantity__and__size {
-    width: 50%;
-    min-width: 220px;
-    height: 40%;
+/* =========================
+   FORM
+========================= */
+
+.product__form {
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* =========================
+   QUANTITY + SIZE
+========================= */
+
+.product__quantity__and__size {
+    width: 100%;
+    min-width: 0;
+
+    display: flex;
+    justify-content: flex-start;
     align-items: center;
+
+    gap: 35px;
+
+    margin-bottom: 25px;
 }
 
 .product__quantity {
-    width: 50%;
+    width: auto;
+
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
 }
 
+.quantity__input {
+    min-width: 25px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 15px;
+    color: #111;
+}
+
 .product__size {
-    width: 50%;
+    width: 115px;
+
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+/* =========================
+   BUTTONS
+========================= */
+
 .collect__item__actions {
-    width: 280px;
-    height: 70%;
+    width: 100%;
+    height: auto;
+
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    flex-direction: column;
-    align-self: flex-start;
 }
 
 .add__cart__add__wish {
     width: 100%;
-    height: 100%;
+
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    flex-direction: row;
+
+    gap: 15px;
 }
 
 .add__cart {
-    width: 100%;
-    height: 100px;
-    bottom: 0%;
+    width: auto;
+    height: auto;
+
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    flex-direction: row;
 }
+
+.add__wish {
+    display: flex;
+    align-items: center;
+}
+
+/* =========================
+   ADD TO BAG
+========================= */
+
+.add__cart button {
+    min-width: 200px !important;
+    height: 48px;
+
+    border-radius: 6px !important;
+
+    background-color: #000 !important;
+    border: 1px solid #000 !important;
+
+    color: #fff !important;
+
+    font-family: "Manrope", sans-serif !important;
+    font-size: 13px !important;
+    font-weight: 700 !important;
+
+    cursor: pointer;
+
+    transition: 0.25s ease;
+}
+
+.add__cart button:hover {
+    background-color: #000 !important;
+    border-color: #000 !important;
+    color: #fff !important;
+}
+
+/* =========================
+   WISHLIST
+========================= */
+
+.add__wish button {
+    width: 48px;
+    height: 48px;
+
+    border-radius: 50%;
+
+    background-color: #000 !important;
+    border: 1px solid #000 !important;
+
+    color: #fff !important;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: 0.25s ease;
+}
+
+.add__wish button:hover {
+    background-color: #e5e5e5 !important;
+    border-color: #000 !important;
+    color: #000 !important;
+}
+
+/* =========================
+   OLD BUTTON CLASSES
+========================= */
 
 .add__to__cart__button {
     width: 220px;
-    height:45px;
-    border-radius: 25px;
-    font-size: 0.8rem;
-    background-color: var(--grey);
-    border-color: var(--grey);
-    border-style: dashed;
-    font-weight:bold;
+    height: 45px;
+
+    border-radius: 6px;
+
+    font-size: 13px;
+
+    background-color: #000;
+    border: 1px solid #000;
+
+    color: #fff;
+
+    font-weight: 700;
 }
 
 .add__to__cart__button:hover {
-    background-color: #e8ce67;
-    border-color: #e8ce67;
+    background-color: #000;
+    border-color: #000;
 }
 
 .buy__now {
     width: 100%;
-    height: 50%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
 
 .buy__now__button {
     width: 100%;
-    height: auto;
     display: flex;
     justify-content: flex-start;
 }
 
 .buy__button {
     width: 220px;
-    height:45px;
-    border-radius: 25px;
-    font-size: 0.8rem;
-    background-color: var(--black)000;
-    font-weight:bold;
-    border-style: none;
-    color: var(--white);
+    height: 45px;
+
+    border-radius: 6px;
+
+    background-color: #000;
+    color: #fff;
+
+    border: none;
+
+    font-size: 13px;
+    font-weight: 700;
 }
 
 .buy__button:hover {
-    background-color: var(--black)000d1;
+    background-color: #000;
+    color: #fff;
 }
 
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media screen and (max-width: 900px) {
+
+    .product__detail__container {
+        width: 100%;
+        min-width: 0;
+        padding: 30px;
+    }
+
+    .product__detail {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+
+    .product__detail__container {
+        padding: 25px 20px;
+    }
+
+    .product__name__main {
+        font-size: 25px;
+    }
+
+    .product__detail__description {
+        font-size: 15px;
+    }
+
+    .product__price__detail {
+        font-size: 22px;
+    }
+
+    .product__quantity__and__size {
+        gap: 20px;
+    }
+
+    .add__cart__add__wish {
+        gap: 10px;
+    }
+
+    .add__cart button {
+        min-width: 160px !important;
+    }
+}
+.product__added__popup {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    background-color: #e5e5e5;
+    color: #000;
+
+    padding: 12px 25px;
+    border-radius: 8px;
+
+    font-family: "Manrope", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+
+    z-index: 9999;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}

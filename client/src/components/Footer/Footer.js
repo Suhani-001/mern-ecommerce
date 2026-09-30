@@ -1,4 +1,5 @@
-import './Footer.css'
+import './Footer.css';
+
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 import EmailIcon from '@mui/icons-material/Email';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
@@ -8,79 +9,152 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 import TelegramIcon from '@mui/icons-material/Telegram';
 import PinterestIcon from '@mui/icons-material/Pinterest';
 
+import { Link } from 'react-router-dom';
+
+
 const Footer = () => {
-    return ( 
+
+    return (
         <footer>
+
             <div className="footer__container">
+
                 <div className="footer__items__container">
+
+
+                    {/* HELP */}
+
                     <div className="footer__help__container">
+
                         <div className="footer__help__header">
                             <h1>Help</h1>
                         </div>
+
                         <ul className="fotter__help__links">
+
                             <li className="help__link">
-                                <a href="/"> Shipping</a>
+                                <Link to="/shipping">
+                                    Shipping & Delivery
+                                </Link>
                             </li>
+
                             <li className="help__link">
-                                <a href="/">Refund</a>
+                                <Link to="/refund">
+                                    Returns & Refunds
+                                </Link>
                             </li>
+
                             <li className="help__link">
-                                <a href="/">FAQ</a>
+                                <Link to="/faq">
+                                    FAQs
+                                </Link>
                             </li>
+
                             <li className="help__link">
-                                <a href="/">Accessiblity</a>
+                                <Link to="/contact">
+                                    Contact Us
+                                </Link>
                             </li>
+
                         </ul>
+
                     </div>
+
+
+                    {/* CONTACT */}
+
                     <div className="footer__contact__container">
+
                         <div className="footer__contact__header">
                             <h1>Contact Us</h1>
                         </div>
+
                         <ul className="footer__contacts">
+
                             <li className="footer__contact">
-                                <LocalPhoneIcon /> <span>+123 4567 890</span>
+                                <LocalPhoneIcon />
+                                <span>+91 98745 22663</span>
                             </li>
+
                             <li className="footer__contact">
-                                <EmailIcon /> <span>shop@vastra.com</span>
+                                <EmailIcon />
+                                <span>support@vastra.com</span>
                             </li>
+
                             <li className="footer__contact">
-                                <LocationOnIcon /> <span>Addis Ababa, Ethiopia</span>
+                                <LocationOnIcon />
+                                <span>Moradabad, India</span>
                             </li>
+
                         </ul>
+
                     </div>
+
+
+                    {/* SOCIAL MEDIA */}
+
                     <div className="footer__social__link__container">
+
                         <div className="footer__social__link__header">
                             <h1>Stay Connected</h1>
                         </div>
-                    <ul className="footer__social__links">
+
+                        <ul className="footer__social__links">
+
                             <li className="social__link">
                                 <TwitterIcon />
                             </li>
+
                             <li className="social__link">
                                 <InstagramIcon />
                             </li>
+
                             <li className="social__link">
                                 <YouTubeIcon />
                             </li>
+
                             <li className="social__link">
                                 <TelegramIcon />
                             </li>
+
                             <li className="social__link">
                                 <PinterestIcon />
                             </li>
+
                         </ul>
+
                     </div>
+
                 </div>
+
+
+                {/* COPYRIGHT */}
+
                 <div className="fotter__copyright__container">
-                    <ul className='nav'>
-                        <li className="footer__copyright">©2022 vastra Ltd. |</li>
-                        <li className="footer__terms__condition"> | Terms & Condition |</li>
-                        <li className="footer__privacy__policy">| Privacy Policy</li>
+
+                    <ul className="nav">
+
+                        <li className="footer__copyright">
+                            ©2026 Vastra. All Rights Reserved.
+                        </li>
+
+                        <li className="footer__terms__condition">
+                            Terms & Conditions
+                        </li>
+
+                        <li className="footer__privacy__policy">
+                            Privacy Policy
+                        </li>
+
                     </ul>
-                     </div>
+
+                </div>
+
             </div>
+
         </footer>
-     );
-}
- 
+    );
+};
+
+
 export default Footer;
