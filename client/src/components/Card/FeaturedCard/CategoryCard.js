@@ -1,11 +1,23 @@
+
 import { Link } from "react-router-dom";
-import "./CategoryCard.css";
 import { Button } from "@mui/material";
+import "./CategoryCard.css";
 
 const CategoryCard = (props) => {
+    const categorySlug = {
+        "Ethnic": "ethnic",
+        "Casual": "casual",
+        "Footwear": "footwear",
+        "Jewellery": "jewellery",
+        "Workwear": "workwear",
+        "Kidswear": "kidswear",
+        "Handbags": "handbags",
+        "Watch": "watch",
+        "Sportswear": "sportswear"
+    }[props.data.name] || props.data.name.toLowerCase();
+
     return (
         <div className="category__card__card">
-
             <div className="category__image">
                 <img
                     src={props.data.image}
@@ -16,7 +28,7 @@ const CategoryCard = (props) => {
 
             <div className="category__card__detail">
                 <div className="category__card__action">
-                    <Link to="/shop">
+                    <Link to={`/category/${categorySlug}`}>
                         <Button
                             variant="outlined"
                             sx={{
@@ -30,7 +42,6 @@ const CategoryCard = (props) => {
                                 fontWeight: "700",
                                 fontSize: "0.75rem",
                                 whiteSpace: "nowrap",
-
                                 "&:hover": {
                                     backgroundColor: "#000000",
                                     borderColor: "#000000",
@@ -44,11 +55,9 @@ const CategoryCard = (props) => {
                 </div>
             </div>
 
-            <h3
-            className="category__name">
+            <h3 className="category__name">
                 {props.data.name}
             </h3>
-
         </div>
     );
 };

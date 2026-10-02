@@ -7,6 +7,7 @@ const itemsCollection = [
         "category": "men",
         "color": "black",
         "type": "shoes",
+        "subcategories": ["footwear", "sportswear"],
         "description": "Sports shoes",
         "price": 1249,
         "size": [
@@ -62,6 +63,7 @@ const itemsCollection = [
         "category": "men",
         "color": "Sky Blue",
         "type": "shirt",
+        "subcategories": ["casual"],
         "description": "Striped shirt",
         "price": 559,
         "size": [
@@ -117,6 +119,7 @@ const itemsCollection = [
         "category": "men",
         "color": "black",
         "type": "shoes",
+        "subcategories": ["footwear"],
         "description": "Front lace-up derby shoes",
         "price": 450,
         "size": [
@@ -172,6 +175,7 @@ const itemsCollection = [
         "category": "men",
         "color": "black",
         "type": "tshirt",
+        "subcategories": ["casual"],
         "description": "Short-sleeved T-shirt",
         "price": 349,
         "size": [
@@ -229,6 +233,7 @@ const itemsCollection = [
         "category": "men",
         "color": "blue",
         "type": "jeans",
+         "subcategories": ["casual"],
         "description": "straight leg jeans",
         "price": 999,
         "size": [
@@ -286,6 +291,7 @@ const itemsCollection = [
         "category": "men",
         "color": "black",
         "type": "shoes",
+         "subcategories": ["footwear", "sportswear"],
         "description": "Black & White sneakers",
         "price": 5550,
         "size": [
@@ -343,6 +349,7 @@ const itemsCollection = [
         "category": "men",
         "color": "pen",
         "type": "hoodie",
+         "subcategories": ["casual"],
         "description": "Front pocket Hoodie",
         "price": 1399,
         "size": [
@@ -401,6 +408,7 @@ const itemsCollection = [
         "category": "men",
         "color": "olive green",
         "type": "trousers",
+        "subcategories": ["casual"],
         "description": "Track pants",
         "price": 450,
         "size": [
@@ -461,6 +469,7 @@ const itemsCollection = [
         "category": "women",
         "color": "blue",
         "type": "jeans",
+         "subcategories": ["casual"],
         "description": "Wide-leg jeans",
         "price": 1250,
         "size": [
@@ -521,6 +530,7 @@ const itemsCollection = [
         "category": "women",
         "color": "#457199",
         "type": "jacket",
+         "subcategories": ["casual"],
         "description": "Blue denim jacket",
         "price": 1610,
         "size": [
@@ -580,6 +590,7 @@ const itemsCollection = [
         "category": "women",
         "color": "brown",
         "type": "shoes",
+         "subcategories": ["footwear"],
         "description": "Dark brown Loafers",
         "price": 750,
         "size": [
@@ -639,6 +650,7 @@ const itemsCollection = [
         "category": "women",
         "color": "yellow",
         "type": "dress",
+        "subcategories": ["casual"],
         "description": "Striped Button-Down Midi Dress",
         "price": 649,
         "size": [
@@ -699,6 +711,7 @@ const itemsCollection = [
         "category": "women",
         "color": "white",
         "type": "shoes",
+        "subcategories": ["footwear"],
         "description": "Trrack-3 sneakers",
         "price": 979,
         "size": [
@@ -756,6 +769,7 @@ const itemsCollection = [
         "category": "women",
         "color": "pink",
         "type": "dress",
+        "subcategories": ["ethnic"],
         "description": "Wide sleeve kurta set",
         "price": 1129,
         "size": [
@@ -818,6 +832,7 @@ const itemsCollection = [
         "category": "women",
         "color": "red",
         "type": "dress",
+        "subcategories": ["casual"],
         "description": "Puffed sleeve top",
         "price": 559,
         "size": [
@@ -876,6 +891,7 @@ const itemsCollection = [
         "category": "women",
         "color": "yellow",
         "type": "dress",
+        "subcategories": ["ethnic"],
         "description": "Organza yellow saree",
         "price": 2499,
         "size": [
@@ -936,6 +952,7 @@ const itemsCollection = [
         "category": "kids",
         "color": "green",
         "type": "dress",
+        "subcategories": ["ethnic", "kidswear"],
         "description": "Green cotton kurta",
         "price": 878,
         "size": [
@@ -986,6 +1003,7 @@ const itemsCollection = [
         "category": "kids",
         "color": "blue",
         "type": "dress",
+        "subcategories": ["kidswear", "casual"],
         "description": "Teen denim dress",
         "price": 910,
         "size": [
@@ -1032,6 +1050,7 @@ const itemsCollection = [
         "category": "kids",
         "color": "white",
         "type": "shoes",
+        "subcategories": ["footwear", "kidswear"],
         "description": "white sandals",
         "price": 549,
         "size": [
@@ -1080,6 +1099,7 @@ const itemsCollection = [
         "category": "kids",
         "color": "black",
         "type": "dress",
+         "subcategories": ["kidswear", "casual"],
         "description": "Color-block coat",
         "price": 249,
         "size": [
@@ -1137,6 +1157,7 @@ const itemsCollection = [
         "category": "kids",
         "color": "green",
         "type": "dress",
+         "subcategories": ["kidswear", "casual"],
         "description": "Crew-neck sweatshirt",
         "price": 679,
         "size": [
@@ -1184,6 +1205,7 @@ const itemsCollection = [
         "category": "kids",
         "color": "white",
         "type": "dress",
+         "subcategories": ["kidswear", "ethnic"],
         "description": "white cotton dress",
         "price": 1099,
         "size": [
@@ -1232,6 +1254,7 @@ const itemsCollection = [
         "category": "kids",
         "color": "white",
         "type": "bag",
+         "subcategories": ["handbags", "kidswear"],
         "description": "white and red hello kitty backpack",
         "price": 540,
         "size": [
@@ -1290,6 +1313,7 @@ const itemsCollection = [
         "category": "kids",
         "color": "#264C0E",
         "type": "shoes",
+        "subcategories": ["footwear", "kidswear"],
         "description": "Kids sneakers",
         "price": 879,
         "size": [

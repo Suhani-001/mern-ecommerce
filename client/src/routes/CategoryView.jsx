@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
@@ -5,76 +6,67 @@ import ReactLoading from 'react-loading';
 import Category from '../components/Category/Category';
 
 const CategoryView = () => {
+    const { id } = useParams();
 
-    const param = useParams();
-
-    const [menItems, setMenItems] = useState();
-    const [womenItems, setWomenItems] = useState();
-    const [kidsItems, setKidsItems] = useState();
+    const [items, setItems] = useState([]);
     const [loading, setLoading] = useState(true);
 
+    const categoryName = {
+        ethnic: "Ethnic Wear",
+        casual: "Casual Wear",
+        footwear: "Footwear",
+        jewellery: "Jewellery",
+        workwear: "Workwear",
+        kidswear: "Kidswear",
+        handbags: "Handbags",
+        watch: "Watches",
+        sportswear: "Sportswear"
+    };
+
     useEffect(() => {
+        setLoading(true);
 
         axios.get("http://localhost:5000/api/items")
-            .then(res => {
-
-                setMenItems(
-                    res.data.filter(item => item.category === "men")
+            .then((res) => {
+                const filteredItems = res.data.filter((item) =>
+                    Array.isArray(item.subcategories) &&
+                    item.subcategories.some(
+                        (subcategory) =>
+                            subcategory.toLowerCase() ===
+                            id?.toLowerCase()
+                    )
                 );
 
-                setKidsItems(
-                    res.data.filter(item => item.category === "kids")
-                );
-
-                setWomenItems(
-                    res.data.filter(item => item.category === "women")
-                );
-
-                setLoading(false);
+                setItems(filteredItems);
             })
-            .catch(err => console.log(err));
+            .catch((err) => {
+                console.error("Error fetching products:", err);
+            })
+            .finally(() => {
+                setLoading(false);
+            });
 
         window.scrollTo(0, 0);
-
-    }, [param.id]);
+    }, [id]);
 
     return (
-        <div className="d-flex min-vh-100 w-100 justify-content-center align-items-center m-auto">
-
-            {loading && (
-                <ReactLoading
-                    type="balls"
-                    color="var(--grey)"
-                    height={100}
-                    width={100}
-                    className="m-auto"
-                />
-            )}
-
-            {menItems && param.id === "men" && (
+        <div className="w-100">
+            {loading ? (
+                <div className="d-flex justify-content-center align-items-center min-vh-100">
+                    <ReactLoading
+                        type="balls"
+                        color="var(--grey)"
+                        height={100}
+                        width={100}
+                    />
+                </div>
+            ) : (
                 <Category
-                    name="Men's Fashion"
-                    items={menItems}
-                    category="men"
+                    name={categoryName[id?.toLowerCase()] || id}
+                    items={items}
+                    category={id}
                 />
             )}
-
-            {womenItems && param.id === "women" && (
-                <Category
-                    name="Women's Fashion"
-                    items={womenItems}
-                    category="women"
-                />
-            )}
-
-            {kidsItems && param.id === "kids" && (
-                <Category
-                    name="Kids Fashion"
-                    items={kidsItems}
-                    category="kids"
-                />
-            )}
-
         </div>
     );
 };

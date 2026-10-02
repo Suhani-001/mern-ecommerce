@@ -20,6 +20,10 @@ const itemSchema = mongoose.Schema(
             type: String,
             required: true
         },
+        subcategories: {
+    type: [String],
+    default: []
+},
         description: {
             type: String,
             required: true
