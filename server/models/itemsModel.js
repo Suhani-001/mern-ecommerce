@@ -21,7 +21,7 @@ const itemSchema = mongoose.Schema(
             required: true
         },
         subcategories: {
-    type: [String],
+    type: Array,
     default: []
 },
         description: {

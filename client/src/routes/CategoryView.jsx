@@ -28,14 +28,21 @@ const CategoryView = () => {
 
         axios.get("http://localhost:5000/api/items")
             .then((res) => {
-                const filteredItems = res.data.filter((item) =>
-                    Array.isArray(item.subcategories) &&
-                    item.subcategories.some(
-                        (subcategory) =>
-                            subcategory.toLowerCase() ===
-                            id?.toLowerCase()
-                    )
-                );
+                const mainCategories = ["men", "women", "kids"];
+
+const filteredItems = res.data.filter(item => {
+    if (mainCategories.includes(id?.toLowerCase())) {
+        return item.category?.toLowerCase() === id?.toLowerCase();
+    }
+
+    return (
+        Array.isArray(item.subcategories) &&
+        item.subcategories.some(
+            subcategory =>
+                subcategory.toLowerCase() === id?.toLowerCase()
+        )
+    );
+});
 
                 setItems(filteredItems);
             })
